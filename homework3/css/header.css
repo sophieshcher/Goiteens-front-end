@@ -1,0 +1,51 @@
+.header{
+    width: 1200px;
+    text-align: center;
+    margin: auto; 
+}
+
+
+
+.menu {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 102px;
+    margin-top: 77px;
+}
+
+.menuList{
+
+}
+
+.menuListItem{
+list-style: none;
+display: inline-block;
+margin-right: 121px;
+}
+.menuListItem:last-child{
+    margin-right: 0px;
+}
+
+.ItemLink{
+    text-decoration: none;
+    color: #626262;
+    font-size: 14px;
+    width: 88;
+}
+
+.menuListItem :hover{
+    color: #03A9F4;
+}
+
+
+
+
+
+
+
+
+
+
+
+

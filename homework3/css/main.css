@@ -1,0 +1,77 @@
+.main{
+text-align: center;
+margin: auto;
+width: 1200px;
+}
+
+.card{
+    width: 421px;
+    text-align:left;
+    display: inline-block;
+    margin-bottom: 137px ;
+    margin-right: 90px;
+}
+.card:nth-child(2n+2){
+    margin-right: 0px;
+}
+
+
+.cardImg{
+    width: 421px;
+    margin-bottom: 31px;
+}
+
+
+
+.cardSpan{
+font-family: 'Ubuntu', sans-serif;
+color: #B4AD9E;
+width: 63px;
+font-size: 14;
+text-align: left;
+font-weight: 300;
+margin-bottom: 28px;
+}
+
+
+.cardTitle{
+    width: 407px;
+    color: #626262;
+    font-size: 30px;
+    font-family:'Playfair Display', serif;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+
+.cardText{
+    width: 414px;
+    color: #626262;
+    font-family:'Playfair Display', serif;
+    font-size: 14px;
+    text-align: left;
+    font-weight: 400;
+}
+
+
+.button{
+    text-align: center;
+    color: #626262;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    background-color: #fff;
+    margin-left: 506px;
+    margin-right: 520px;
+    margin-bottom: 70px;
+    width: 165px;
+    height: 61px;
+}
+
+
+.a{
+    text-decoration: none;
+    color: #626262;
+    font-family: 'Playfair Display', serif;
+    background-color: #fff;
+    font-size: 20px;
+}

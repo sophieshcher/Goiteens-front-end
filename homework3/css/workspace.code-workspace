@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../../IT-FE-PRO-3"
+		},
+		{
+			"path": "../../../../ LuBch"
+		},
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "git"
+	}
+}
