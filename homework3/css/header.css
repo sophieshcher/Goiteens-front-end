@@ -1,9 +1,11 @@
 .header{
-    width: 1200px;
     text-align: center;
-    margin: auto; 
 }
-
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 15px;
+}
 
 
 .menu {
@@ -21,7 +23,7 @@
 .menuListItem{
 list-style: none;
 display: inline-block;
-margin-right: 121px;
+margin-right: 105px;
 }
 .menuListItem:last-child{
     margin-right: 0px;
@@ -32,6 +34,7 @@ margin-right: 121px;
     color: #626262;
     font-size: 14px;
     width: 88;
+    text-transform: uppercase;
 }
 
 .menuListItem :hover{
