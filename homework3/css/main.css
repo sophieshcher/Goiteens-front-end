@@ -22,7 +22,7 @@ text-align: center;
 
 
 
-.cardSpan{
+.cardp{
 font-family: 'Ubuntu', sans-serif;
 color: #B4AD9E;
 width: 63px;
@@ -67,4 +67,8 @@ margin-bottom: 28px;
     height: 61px;
      margin-bottom: 70px;
    
+}
+
+.button:hover{
+    color: #03A9F4;
 }
