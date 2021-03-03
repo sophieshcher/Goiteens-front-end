@@ -1,74 +1,70 @@
-.main{
-text-align: center;
+.main {
+  text-align: center;
 }
 
-.card{
-    width: 100%;
-    text-align:left;
-    display: inline-block;
-    margin-bottom: 137px ;
-    margin-right: 90px;
-    max-width: 421px;
+.card {
+  width: 100%;
+  text-align: left;
+  display: inline-block;
+  margin-bottom: 137px;
+  margin-right: 90px;
+  max-width: 421px;
 }
-.card:nth-child(2n+2){
-    margin-right: 0px;
-}
-
-
-.cardImg{
-    width: 421px;
-    margin-bottom: 31px;
+.child56 {
+  margin-bottom: 53px;
 }
 
-
-
-.cardp{
-font-family: 'Ubuntu', sans-serif;
-color: #B4AD9E;
-width: 63px;
-font-size: 14;
-text-align: left;
-font-weight: 300;
-margin-bottom: 28px;
+.card:nth-child(2n + 2) {
+  margin-right: 0px;
 }
 
-
-.cardTitle{
-    width: 407px;
-    color: #626262;
-    font-size: 30px;
-    font-family:'Playfair Display', serif;
-    font-weight: 400;
-    margin-bottom: 32px;
-    
+.cardImg {
+  width: 421px;
+  margin-bottom: 30px;
 }
 
-
-.cardText{
-    width: 414px;
-    color: #626262;
-    font-family:'Playfair Display', serif;
-    font-size: 14px;
-    text-align: left;
-    font-weight: 400;
-}
-.btn-box{
-    text-align: center;
+.cardh4 {
+  font-family: "Ubuntu", sans-serif;
+  color: #b4ad9e;
+  width: 63px;
+  font-size: 14;
+  text-align: left;
+  font-weight: 300;
+  margin-bottom: 28px;
+  text-transform: uppercase;
 }
 
-.button{
-    text-align: center;
-    color: #626262;
-    font-family: 'Playfair Display', serif;
-    text-decoration: none;
-    background-color: #fff;
-    border: 1px solid #626262;
-    width: 165px;
-    height: 61px;
-     margin-bottom: 70px;
-   
+.cardTitle {
+  width: 407px;
+  color: #626262;
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin-bottom: 32px;
 }
 
-.button:hover{
-    color: #03A9F4;
+.cardText {
+  width: 414px;
+  color: #626262;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.button {
+  /* text-align: center; */
+  color: #626262;
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #626262;
+  width: 165px;
+  height: 61px;
+  margin-bottom: 70px;
+}
+
+.button:hover {
+  border-color: #03a9f4;
+  color: #03a9f4;
 }
