@@ -1,0 +1,169 @@
+.main{
+    width: 1200px;
+    margin: auto;
+}
+
+.services{
+    padding-top: 178px;
+}
+
+.header_sub_title{
+    text-align: center;
+    color: #333333;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+
+.header_title{
+    text-align: center;
+    color: #333333;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 41px;
+}
+
+.header_title::after{
+    content: "";
+    width: 61px;
+    height: 4px;
+    background-color: #f38181;
+    margin-top: 6px;
+    display: block;
+    margin: 41px auto 0;
+  }
+
+
+.services_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service_card{
+    width: 330px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+
+.service_card_text_box{
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+
+}
+
+.service_card_text_box::before{
+    
+
+}
+
+.service_card_text{
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    width: 288px;
+}
+
+.service_card_title{
+    color: #333333;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    font-weight: 400;
+}
+
+
+/* секція з командою */
+
+.team{}
+
+.team_text{
+    color: #999999;
+    width: 941px;
+    font-size: 15px;
+    font-family: Roboto-Regular;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto 91px auto;
+}
+
+.team_wrapper{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 145px;
+}
+
+.team_card_wrapper{}
+
+.team_card{
+    width: 383px;
+}
+
+.team_card_img{
+    height: 543px;
+    width: 383px;
+    margin-bottom: 31px;
+}
+
+.team_text_wrapper{
+    width: 383px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team_card_name{
+    font-size: 14px;
+    color: #333333;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.team_card_text{
+    font-weight: 300;
+    font-size: 14px;
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+
+
+.card_hidden{
+    background-image: linear-gradient(#ef8b8a, #FCE38A);
+    height: 471px;
+    width: 381px;
+    opacity: 0,5;
+}
+
+.card_btn_wrapper{}
+
+.btn_action{}
+
+
+
+
+
+
+
+
+
+
+
