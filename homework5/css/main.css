@@ -1,169 +1,215 @@
-.main{
-    width: 1200px;
-    margin: auto;
+.main {
+  width: 1200px;
+  margin: auto;
 }
 
-.services{
-    padding-top: 178px;
+.services {
+  padding-top: 178px;
 }
 
-.header_sub_title{
-    text-align: center;
-    color: #333333;
-    font-family: 'Kaushan Script', cursive;
-    font-size: 24px;
-    font-weight: 400;
-    margin-bottom: 22px;
+.header_sub_title {
+  text-align: center;
+  color: #333333;
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 22px;
 }
 
-.header_title{
-    text-align: center;
-    color: #333333;
-    font-weight: 700;
-    font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 41px;
+.header_title {
+  text-align: center;
+  color: #333333;
+  font-weight: 700;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 41px;
 }
 
-.header_title::after{
-    content: "";
-    width: 61px;
-    height: 4px;
-    background-color: #f38181;
-    margin-top: 6px;
-    display: block;
-    margin: 41px auto 0;
-  }
-
-
-.services_wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.header_title::after {
+  content: "";
+  width: 61px;
+  height: 4px;
+  background-color: #f38181;
+  margin-top: 6px;
+  display: block;
+  margin: 41px auto 0;
 }
 
-.service_card{
-    width: 330px;
-    margin-bottom: 100px;
-    display: flex;
-    flex-wrap: wrap;
-
+.services_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-
-
-.service_card_text_box{
-    display: flex;
-    flex-direction: column;
-    width: 260px;
-
+.service_card {
+  width: 330px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.service_card_text_box::before{
-    
-
+.service_text_wrapper {
+  width: 270px;
 }
 
-.service_card_text{
-    color: #999999;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    width: 288px;
+.part1::before {
+  content: url(../images/image_1.png);
+  height: 33px;
+  width: 33px;
 }
 
-.service_card_title{
-    color: #333333;
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    text-transform: uppercase;
-    margin-bottom: 18px;
-    font-weight: 400;
+.part2::before {
+  content: url(../images/image_3.png);
+  height: 33px;
+  width: 33px;
 }
 
+.part3::before {
+  content: url(../images/image_5.png);
+  height: 33px;
+  width: 33px;
+}
+
+.part4::before {
+  content: url(../images/image_2.png);
+  height: 33px;
+  width: 33px;
+}
+
+.part5::before {
+  content: url(../images/image_4.png);
+  height: 33px;
+  width: 33px;
+}
+
+.part6::before {
+  content: url(../images/image_6.png);
+  height: 33px;
+  width: 33px;
+}
+
+.service_card_text {
+  color: #999999;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  width: 288px;
+}
+
+.service_card_title {
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  font-weight: 400;
+}
 
 /* секція з командою */
 
-.team{}
-
-.team_text{
-    color: #999999;
-    width: 941px;
-    font-size: 15px;
-    font-family: Roboto-Regular;
-    font-weight: 400;
-    text-align: center;
-    margin: 0 auto 91px auto;
+.team {
+  width: 100%;
 }
 
-.team_wrapper{
-    width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 145px;
+.team_text {
+  color: #999999;
+  width: 941px;
+  font-size: 15px;
+  font-family: Roboto-Regular;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto 91px auto;
 }
 
-.team_card_wrapper{}
-
-.team_card{
-    width: 383px;
+.team_wrapper {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 81px;
 }
 
-.team_card_img{
-    height: 543px;
-    width: 383px;
-    margin-bottom: 31px;
+.team_card_wrapper {
+  position: relative;
 }
 
-.team_text_wrapper{
-    width: 383px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.team_card {
+  width: 383px;
 }
 
-.team_card_name{
-    font-size: 14px;
-    color: #333333;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    margin-bottom: 15px;
-    text-transform: uppercase;
+.team_card:hover {
+  transform: translate(-10px, -10px);
+  transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
 }
 
-.team_card_text{
-    font-weight: 300;
-    font-size: 14px;
-    color: #999999;
-    font-family: 'Roboto', sans-serif;
+.team_card_img {
+  height: 471px;
+  width: 381px;
+  margin-bottom: 31px;
 }
 
-
-
-
-
-
-
-
-.card_hidden{
-    background-image: linear-gradient(#ef8b8a, #FCE38A);
-    height: 471px;
-    width: 381px;
-    opacity: 0,5;
+.team_text_wrapper {
+  width: 383px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.card_btn_wrapper{}
+.team_card_name {
+  font-size: 14px;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
 
-.btn_action{}
+.team_card_text {
+  font-weight: 300;
+  font-size: 14px;
+  color: #999999;
+  font-family: "Roboto", sans-serif;
+}
 
+.card_hidden {
+  display: flex;
+  background-image: linear-gradient(
+    rgba(239, 139, 138, 0.8),
+    rgba(252, 227, 138, 0.8)
+  );
+  height: 471px;
+  width: 381px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+}
 
+.team_card_wrapper:hover .card_hidden {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+  box-shadow: 10px 10px #95e1d3;
+}
 
+.card_btn_wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 231px;
+}
 
+.btn_action {
+  width: 57px;
+  height: 57px;
+  background-color: #fce38a;
+  border: none;
+}
 
-
-
-
-
-
-
+.btn_action:hover {
+  background-color: #95e1d3;
+}

@@ -1,0 +1,21 @@
+.footer {
+  width: 100%;
+}
+
+.footer_section {
+  width: 1200px;
+  border-top: solid 1px #e5e5e5;
+  margin: auto;
+  padding: 24px 1px;
+}
+
+.footer_span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.footer_span2 {
+  color: #f38181;
+}
