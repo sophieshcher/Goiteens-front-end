@@ -135,6 +135,9 @@
 
 .team_card {
   width: 383px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .team_card:hover {
@@ -148,12 +151,6 @@
   margin-bottom: 31px;
 }
 
-.team_text_wrapper {
-  width: 383px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .team_card_name {
   font-size: 14px;
