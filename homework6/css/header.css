@@ -1,0 +1,52 @@
+.header{
+    width: 100%;
+}
+
+.header_container{
+    width: 950px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   padding-top: 55px;
+
+}
+
+.logo{
+   
+}
+
+.logo_link{
+    font-family: 'Montserrat', sans-serif;
+    color: #FED136;
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+
+.menu{
+    width: 480px;
+}
+
+.menu_list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_list_item{
+   
+}
+
+.menu_list_item_link:hover{
+    color: #FED136;
+}
+
+.menu_list_item_link{
+    color: #222222;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+

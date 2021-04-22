@@ -150,7 +150,6 @@
 .team_card_img {
   height: 471px;
   width: 381px;
-  margin-bottom: 31px;
 }
 
 
@@ -162,6 +161,7 @@
   margin-bottom: 15px;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 31px;
 }
 
 .team_card_text {
@@ -191,7 +191,7 @@
   transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
 }
 
-.team_card_wrapper:hover .card_hidden {
+.team_card:hover .card_hidden {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;

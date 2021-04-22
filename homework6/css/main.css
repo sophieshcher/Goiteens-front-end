@@ -1,0 +1,40 @@
+.main{
+    width: 100%;
+}
+
+.services{
+    width: 960px;
+    margin: auto;
+}
+
+.services_title{
+    color: #222222;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 127px;
+}
+
+.services_subtitle{
+    color: #777777;
+    font-size: 16px;
+    font-style: italic;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.services_card_wrapper{
+    
+}
+
+.service_card{}
+
+.service_card_img{}
+
+.service_card_title{}
+
+.service_card_text{}
