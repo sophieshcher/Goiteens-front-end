@@ -1,40 +1,164 @@
-.main{
-    width: 100%;
+@font-face {
+  font-family: "DroidSerif-italic";
+  src: url(../fonts/DroidSerif-Italic.ttf);
 }
 
-.services{
-    width: 960px;
-    margin: auto;
+.main {
+  width: 100%;
 }
 
-.services_title{
-    color: #222222;
-    font-size: 40px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 127px;
+.services {
+  width: 100%;
+  padding-bottom: 115px;
 }
 
-.services_subtitle{
-    color: #777777;
-    font-size: 16px;
-    font-style: italic;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 400;
-    text-align: center;
-    margin-top: 20px;
+.services_title {
+  color: var(--dark-grey-color);
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 127px;
 }
 
-.services_card_wrapper{
-    
+.services_subtitle {
+  color: var(--grey-color);
+  font-size: 16px;
+  font-family: "DroidSerif-italic";
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 80px;
 }
 
-.service_card{}
+.services_card_wrapper {
+  width: 950px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
 
-.service_card_img{}
+.service_card {
+  width: 275px;
+  height: 186px;
+}
 
-.service_card_title{}
+.img_wrapper {
+  border: solid var(--golden-color) 3px;
+  width: 69px;
+  height: 69px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 28px;
+}
 
-.service_card_text{}
+.service_card_img {
+}
+
+.service_card_title {
+  color: var(--dark-grey-color);
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.service_card_text {
+  text-align: center;
+  color: var(--grey-color);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto Slab", serif;
+}
+
+/* секція з контактами */
+
+.contacts {
+  max-width: 100%;
+  background: var(--dark-grey-color) url(../images/Map\ Image@1X.png) no-repeat
+    right bottom;
+  padding-top: 100px;
+}
+
+.contacts_title {
+  color: var(--white-color);
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contacts_subtitle {
+  font-family: "DroidSerif-italic";
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--light-grey-color);
+  text-align: center;
+  margin-top: 23px;
+}
+
+.form_wrapper {
+  width: 950px;
+  margin: auto;
+  padding-top: 75px;
+}
+
+.form_wrapper_2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form_wrapper_inside {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-1 {
+  width: 451px;
+  height: 51px;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: var(--dark-grey-color);
+  margin-bottom: 28px;
+}
+
+.input-2 {
+  width: 456px;
+  height: 211px;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: var(--dark-grey-color);
+  margin-bottom: 28px;
+}
+
+.btn {
+  width: 271px;
+  height: 67px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--white-color);
+  background-color: var(--golden-color);
+  border: none;
+  border-radius: 5px;
+  margin: auto;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 350px;
+  margin-bottom: 115px;
+}
