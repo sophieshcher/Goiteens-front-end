@@ -1,0 +1,140 @@
+.main {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.partners {
+  padding: 68px 20px 68px 20px;
+}
+
+.partner_title {
+  font-size: 22px;
+  font-family: var(--montserrat);
+  color: var(--dark-grey);
+  margin-bottom: 52px;
+  font-weight: 700;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.list_item {
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.img_wrapper {
+  position: relative;
+  margin-bottom: 20px;
+  width: 130px;
+  height: 130px;
+}
+
+.svg_wrapper,
+.screen {
+  background-color: var(--light-red);
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: solid 4px var(--white);
+  position: absolute;
+  top: 89px;
+  left: 89px;
+}
+
+.bottle {
+  background-color: var(--yellow);
+}
+
+.cup {
+  background-color: var(--mint);
+}
+
+.paper_plane {
+  background-color: var(--blue);
+}
+
+.svg {
+  fill: var(--white);
+}
+
+.img_photo {
+  border-radius: 100px;
+}
+
+.list_item_title {
+  color: var(--dark-grey);
+  font-family: var(--montserrat);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.list_item_text {
+  color: var(--light-grey);
+  font-size: 14px;
+  font-family: var(--roboto);
+  font-weight: 300;
+}
+
+.last {
+  color: var(--red);
+  border-radius: 50px;
+  border: solid 2px var(--red);
+  padding: 13px 70px 13px 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .partners {
+    width: 768px;
+    margin: 0 auto;
+    padding: 60px 50px 40px 50px;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 480px;
+    height: 550px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .partners {
+    margin: 0 auto;
+    width: 960px;
+    padding: 70px 0;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: initial;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    width: 960px;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  .last {
+    transition: box-shadow 300ms ease-in-out;
+  }
+
+  .last:hover {
+    box-shadow: -5px 5px 10px rgba(255, 77, 79, 0.7);
+  }
+}

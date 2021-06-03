@@ -1,0 +1,15 @@
+:root{
+    /* кольори */
+    --white: #fff;
+    --red: rgb(255, 77, 79);
+    --light-red: #FF4E50;
+    --yellow: #FFA507;
+    --mint: #1CD7AD;
+    --blue: #4E73DB;
+    --dark-grey: #333333;
+    --light-grey: #666666;
+    --black: #000;
+    /* шрифти */
+    --montserrat: 'Montserrat', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+}
