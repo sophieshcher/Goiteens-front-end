@@ -93,7 +93,15 @@
   border-radius: 50px;
   border: solid 2px var(--red);
   padding: 13px 70px 13px 70px;
+  transition: box-shadow 300ms ease-in-out;
 }
+
+.last:hover {
+    box-shadow: -5px 5px 10px rgba(255, 77, 79, 0.7);
+  }
+
+
+
 
 @media screen and (min-width: 768px) {
   .partners {
@@ -130,11 +138,5 @@
     height: auto;
   }
 
-  .last {
-    transition: box-shadow 300ms ease-in-out;
-  }
 
-  .last:hover {
-    box-shadow: -5px 5px 10px rgba(255, 77, 79, 0.7);
-  }
 }
