@@ -39,7 +39,7 @@ main {
           box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 425px) {
+@media (max-width: 650px) {
   .main_information {
     width: 300px;
     -webkit-box-orient: vertical;
@@ -107,7 +107,7 @@ main {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 650px) {
   .string {
     width: 240px;
     padding: 0;
@@ -123,7 +123,7 @@ main {
   font-size: 20px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 650px) {
   .string span {
     font-size: 15px;
   }
@@ -134,7 +134,7 @@ main {
   font-size: 17px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 650px) {
   .string p {
     font-size: 13px;
   }
@@ -148,7 +148,7 @@ main {
   position: absolute;
   width: 50px;
   height: auto;
-  top: 14%;
+  top: 12%;
   left: 30%;
   -webkit-animation: svg_icon 0.8s both;
           animation: svg_icon 0.8s both;
@@ -156,14 +156,14 @@ main {
 
 @media (max-width: 1024px) {
   .svg_icon {
-    top: 22%;
+    top: 21%;
     left: 32%;
   }
 }
 
-@media (max-width: 428px) {
+@media (max-width: 650px) {
   .svg_icon {
-    top: 3%;
+    top: 2%;
     left: 87%;
   }
 }

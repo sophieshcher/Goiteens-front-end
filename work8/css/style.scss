@@ -33,7 +33,7 @@
     align-items: center;
     backdrop-filter: blur(10px);
     box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
-    @media (max-width: 425px) {
+    @media (max-width: 650px) {
         width: 300px;
         flex-direction: column;
       }
@@ -76,7 +76,7 @@
     @media (max-width: 1024px) {
       width: 300px;
     }
-    @media (max-width: 425px) {
+    @media (max-width: 650px) {
         width: 240px;
         padding: 0;
         margin: 20px auto 20px;
@@ -87,7 +87,7 @@
       color: $grey;
       font-weight: 600;
       font-size: 20px;
-      @media (max-width: 425px) {
+      @media (max-width: 650px) {
       font-size: 15px;
     }
       
@@ -101,7 +101,7 @@
       color: $grey;
   
       font-size: 17px;
-      @media (max-width: 425px) {
+      @media (max-width: 650px) {
         font-size: 13px;
       }
     }
@@ -115,22 +115,20 @@
       position: absolute;
       width: 50px;
       height: auto;
-      top: 14%;
+      top: 12%;
       left: 30%;
       animation: svg_icon 0.8s both;
       @media (max-width: 1024px) {
-        top: 22%;
+        top: 21%;
       left: 32%;
       }
-      @media (max-width: 428px) {
-        top: 3%;
+      @media (max-width: 650px) {
+        top: 2%;
       left: 87%;
       }
   }
 
-  @media (max-width: 1024px) {
-      
-  }
+
 
  @-webkit-keyframes svg_icon {
     0%,
