@@ -230,6 +230,8 @@ p {
 .fixed_block_input {
     padding: 10px 0px 10px 10px;
     width: 100%;
+    border-radius: 5px;
+    border: solid 1px #666;
 }
 
 .input_button {
