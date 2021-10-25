@@ -20,6 +20,11 @@ body.show-nav {
     
 }
 
+/* .fixed_block_js {
+    display: initial;
+    transition: transform 300ms ease-in-out;
+ } */
+
 nav {
     background-color: var(--primary-color);
     border-right: 1px solid var(--primary-color-light);
@@ -88,7 +93,7 @@ header > p {
     width: 65%;
 }
 
-.cta-btn {
+.cta_btn {
     background: var(--secondary-color);
     width: 130px;
     height: 60px;
@@ -98,6 +103,7 @@ header > p {
     /* font-family: var(--lato-font); */
     font-size: 20px;
     margin-bottom: 40px;
+    cursor: pointer;
 }
 
 .toggle {
@@ -110,8 +116,10 @@ header > p {
     background: rgba(18, 20, 51, 0.4);
     box-shadow: 2px 2px 5px rgba(18, 20, 51, 0.4);
     border: none;
-    padding: 6px 8px;
+    padding: 12px 15px;
     border-radius: 1px;
+    cursor: pointer;
+   
 }
 
 main {
@@ -141,4 +149,96 @@ p {
     margin-bottom: 10px;
     font-weight: 400;
     font-size: 18px;
+}
+
+/* .fade {
+    display: none;
+}
+
+.fade::before {
+    content: '';
+    position: absolute;
+    
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.685);
+    z-index: 150;
+} */
+
+.fixed_block {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 43%;
+    height: 58%;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: -30px 30px 1000px rgba(0, 0, 0, 0.685);
+    display: none;
+    /* display: initial; */
+    z-index: 200;
+    transition: all 300ms ;
+}
+
+/* .fixed_block {
+    display: ;
+} */
+
+
+
+.fixed_block_head {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    
+}
+
+.fixed_block_head_h2 {
+    color: white;
+    font-size: 26px;
+    padding: 6px 0px 0px 20px;
+}
+
+.fixed_block_head_button {
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px 0px 0px;
+    cursor: pointer;
+}
+
+.fixed_block > p {
+    padding: 10px 0px 0px 10px;
+    font-size: 15px;
+}
+
+.form_wrapper {
+    padding: 0px 15px 15px;
+}
+
+.form_wrapper_h3 {
+    padding-bottom: 5px;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.fixed_block_input {
+    padding: 10px 0px 10px 10px;
+    width: 100%;
+}
+
+.input_button {
+    display: block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 15px;
+    cursor: pointer;
 }
