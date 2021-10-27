@@ -1,7 +1,13 @@
+// function onClickSlide() {
+//     document.body.classList.toggle('show-nav');
+
+// }
+
+document.getElementById("toggle").addEventListener("click", onClickSlide);
 function onClickSlide() {
     document.body.classList.toggle('show-nav');
-
 }
+
 // document.getElementById("my_button").addEventListener("click", onAllClick);
 // document.getElementById("toggle").addEventListener("click", onClickSlide);
 
