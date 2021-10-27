@@ -1,0 +1,21 @@
+p{
+    font-size: 20px;
+    color: #333;
+    margin: 40px 100px 60px 100px;
+}
+
+.first_text {
+    color: rgb(248, 189, 95);
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    background-color: tomato;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
