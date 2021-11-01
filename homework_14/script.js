@@ -20,23 +20,23 @@
 let button_counter = 0;
 let first_paragraph = document.getElementById("first_paragraph");
 function onClickColorFirst() {
-    if (button_counter === 0) {
-        first_paragraph.classList.add("first_text");
-        button_counter++
-    } else {
-        first_paragraph.classList.remove("first_text");
-        button_counter--
-    }
-    
+    // if (button_counter === 0) {
+    //     first_paragraph.classList.add("first_text");
+    //     button_counter++
+    // } else {
+    //     first_paragraph.classList.remove("first_text");
+    //     button_counter--
+    // }
+    first_paragraph.classList.add("first_text");
 }
 
-let color;
-let rgbColor;
-function randomColor() {
-     color = Math.floor(Math.random()*256) + ", " + Math.floor(Math.random()*256) + ", " + Math.floor(Math.random()*256);
-     rgbColor = "rgb(" + color + ")";
-     return rgbColor;
-}
+// let color;
+// let rgbColor;
+// function randomColor() {
+//      color = Math.floor(Math.random()*256) + ", " + Math.floor(Math.random()*256) + ", " + Math.floor(Math.random()*256);
+//      rgbColor = "rgb(" + color + ")";
+//      return rgbColor;
+// }
 
 // randomColor();
 
@@ -45,10 +45,10 @@ function randomColor() {
 
 // (Math.floor(Math.random()*9))
 
-function onClickColorSecond() {
-    document.getElementById("second_paragraph1").style.color = randomColor();
-    document.getElementById("second_paragraph2").style.color = randomColor();
-}
+// function onClickColorSecond() {
+//     document.getElementById("second_paragraph1").style.color = randomColor();
+//     document.getElementById("second_paragraph2").style.color = randomColor();
+// }
 
 // var a = document.getElementById("second_peragraphs").style;
 // a.color = randomColor();
@@ -56,7 +56,7 @@ function onClickColorSecond() {
 
 
 
-var a = document.getElementById("id1").style.color = randomColor();
+// var a = document.getElementById("id1").style.color = randomColor();
 
 
 
