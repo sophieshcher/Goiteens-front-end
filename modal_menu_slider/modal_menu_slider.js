@@ -30,3 +30,15 @@ function onClickClose2() {
     document.getElementById("fixed_block").style.display = "none"
 
 }
+
+
+    let textArray = ["M","y"," ", "p", "a", "g", "e"];
+    let check = 0;
+    setInterval(function typing( ) {
+        if (check < textArray.length){
+           document.getElementById("textH1").textContent += (textArray[check])
+       check++
+        }
+        
+    }, 200)
+

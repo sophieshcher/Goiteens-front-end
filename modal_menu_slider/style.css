@@ -32,6 +32,10 @@ body.show-nav {
     transition: transform 300ms ease-in-out;
  } */
 
+#textH1 {
+    height: 60px;
+}
+
 nav {
     background-color: var(--primary-color);
     border-right: 1px solid var(--primary-color-light);

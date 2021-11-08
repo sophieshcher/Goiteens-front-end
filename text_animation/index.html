@@ -4,19 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <title>text_animation</title>
 </head>
 <body>
     <header></header>
     <main>
-        <div id="text"></div>
+        <div id="text0" style="text-align: center;
+        font-size: 40px;
+        padding-top: 40px;"></div>
+        <div id="text1" style="text-align: center;
+        font-size: 40px;
+        padding-top: 40px;"></div>
+        <div id="text2" style="text-align: center;
+        font-size: 40px;
+        padding-top: 40px;"></div>
+        <div id="text3" style="text-align: center;
+        font-size: 40px;
+        padding-top: 40px;"></div>
+        <div id="text4" style="text-align: center;
+        font-size: 40px;
+        padding-top: 40px;"></div>
+        <button id="button" style="width: 100px;
+        height: 30px;
+        cursor: pointer;">тик</button>
         <script>
             i = 0
-            let string = "Hello to my exiting WORLD!";
-            setInterval(function typing() {
-                i++
-                console.log(i)
-            }1000}
+            let check = 0
+            let string = "Hello"
+            let textArray = ["H","e","l","l","o"];
+            // setInterval(function typing( ) {
+            //     if (check < textArray.length){
+            //        document.getElementById("text").textContent += (textArray[check])
+            //    check++
+            //     }
+                
+            // }, 200)
+
+                let nameArray = ["text1", "text2", "text3", "text4", "text5"]
+
+
+            document.getElementById("button").addEventListener("click", clickButton)
+        //     function clickButton(){
+        //         if(check < textArray.length){
+        //         // let strName = toString("'" + 'text'+ check + "'");
+        //         document.getElementById(nameArray[check]).textContent += (textArray[check])
+
+        //         check++
+        //     }
+        // }
+
+
+          let helloWord = "Hello";
+
+  function clickButton() {
+    for (let i = 0; i < helloWord.length ; i++) {
+      document.getElementById("text" + i).textContent = helloWord[i];
+    }
+  }
+
+//         <body>
+
+// <div id="text0"></div>
+// <div id="text1"></div>
+// <div id="text2"></div>
+// <div id="text3"></div>
+// <div id="text4"></div>
+
+// <button onclick="hello()">Тык</button>
+
+// <script type="text/javascript">
+//   let helloWord = "Hello";
+
+//   function hello() {
+//     for (let i = 0; i < helloWord.length; i++) {
+//       document.getElementById("text" + i).textContent = helloWord[i];
+//     }
+//   }
+// </script>
+
+
+// </body>
+
         </script>
     </main>
 </body>

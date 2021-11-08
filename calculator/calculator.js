@@ -161,16 +161,16 @@ document.getElementById("equals").addEventListener("click", equalsFunction);
 function equalsFunction() {
     let secondValue = document.getElementById("screen").textContent;
     if (operator === "plus") {
-        document.getElementById("screen").textContent = parseInt(firstValue) + parseInt(secondValue);
+        document.getElementById("screen").textContent = parseFloat(firstValue) + parseFloat(secondValue);
         operator = 0;
     } else if(operator === "minus") {
-        document.getElementById("screen").textContent = parseInt(firstValue) - parseInt(secondValue);
+        document.getElementById("screen").textContent = parseFloat(firstValue) - parseFloat(secondValue);
         operator = 0;
     } else if (operator === "multiplication") {
-        document.getElementById("screen").textContent = parseInt(firstValue) * parseInt(secondValue);
+        document.getElementById("screen").textContent = parseFloat(firstValue) * parseFloat(secondValue);
         operator = 0;
     } else if (operator === "division") {
-        document.getElementById("screen").textContent = parseInt(firstValue) / parseInt(secondValue);
+        document.getElementById("screen").textContent = parseFloat(firstValue) / parseFloat(secondValue);
         operator = 0;
     }
 
