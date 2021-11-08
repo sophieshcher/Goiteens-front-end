@@ -40,5 +40,5 @@ function onClickClose2() {
        check++
         }
         
-    }, 200)
+    }, 300)
 
