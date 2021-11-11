@@ -1,0 +1,26 @@
+.slider {
+    width: 50%;
+    margin: 5% auto;
+    text-align: right;
+    position: relative;
+}
+img {
+    max-width: 100%;
+}
+
+button {
+    width: 50px;
+    height: 20px;
+    background-color: transparent;
+    border: tomato 2px solid;
+    top: 110%;
+    cursor: pointer;
+}
+#left_button {
+    position: absolute;
+    left: -10%;
+}
+#right_button {
+    position: absolute;
+    right: -10%;
+}

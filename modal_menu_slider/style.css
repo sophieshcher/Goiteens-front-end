@@ -94,6 +94,7 @@ header > h1 {
     font-size: 50px;
     color: white;
     margin-bottom: 30px;
+    height: 60px;
 }
 
 header > p {
@@ -186,7 +187,7 @@ p {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     width: 43%;
-    height: 58%;
+    height: 60%;
     background-color: white;
     border-radius: 7px;
     box-shadow: -50px 50px 1000px rgba(0, 0, 0, 0.985);

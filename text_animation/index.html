@@ -10,7 +10,7 @@
 <body>
     <header></header>
     <main>
-        <div id="text0" style="text-align: center;
+        <div id="text" style="text-align: center;
         font-size: 40px;
         padding-top: 40px;"></div>
         <div id="text1" style="text-align: center;
@@ -29,10 +29,50 @@
         height: 30px;
         cursor: pointer;">тик</button>
         <script>
-            i = 0
-            let check = 0
-            let string = "Hello"
-            let textArray = ["H","e","l","l","o"];
+            let text = 'You are not sharing your screen :)';
+            let textArray = ['H','E','L','L','O']
+            let check = 0;
+
+           function slow(){
+                if(check < text.length) {
+                document.getElementById("text").textContent += text[check];
+                document.getElementById("text").style.fontSize = "38px";
+                check++;
+                setTimeout(slow, 100);
+                }
+            }
+            setTimeout(slow(), 10)
+
+
+            
+   
+            //     for( let i = 0; i < textArray.length; i++){
+            //         function dfghjk(){
+            //         if(i < textArray.length){
+            //             setTimeout(function typing() {
+            //     document.getElementById("text").textContent += textArray[i];
+            // }
+            // ,100);
+            //     }
+            //         }
+            //     }
+            // let r = 0;
+            // let txt = "Hello world!"
+            // let txtArray = txt.split("");
+            // function slow() {
+            //     if(r<txtArray.length){
+            //     document.getElementById("text2").textContent += txtArray[r];
+            //     r++
+            //     setTimeout(slow, 1000)
+            // }
+            // }
+            // setTimeout(slow(), 1000)
+
+
+            // i = 0
+            // let check = 0
+            // let string = "Hello"
+            // let textArray = ["H","e","l","l","o"];
             // setInterval(function typing( ) {
             //     if (check < textArray.length){
             //        document.getElementById("text").textContent += (textArray[check])
@@ -41,10 +81,10 @@
                 
             // }, 200)
 
-                let nameArray = ["text1", "text2", "text3", "text4", "text5"]
+            //     let nameArray = ["text1", "text2", "text3", "text4", "text5"]
 
 
-            document.getElementById("button").addEventListener("click", clickButton)
+            // document.getElementById("button").addEventListener("click", clickButton)
         //     function clickButton(){
         //         if(check < textArray.length){
         //         // let strName = toString("'" + 'text'+ check + "'");
@@ -55,13 +95,13 @@
         // }
 
 
-          let helloWord = "Hello";
+//           let helloWord = "Hello";
 
-  function clickButton() {
-    for (let i = 0; i < helloWord.length ; i++) {
-      document.getElementById("text" + i).textContent = helloWord[i];
-    }
-  }
+//   function clickButton() {
+//     for (let i = 0; i < helloWord.length ; i++) {
+//       document.getElementById("text" + i).textContent = helloWord[i];
+//     }
+//   }
 
 //         <body>
 

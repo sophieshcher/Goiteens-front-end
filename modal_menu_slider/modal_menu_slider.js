@@ -26,19 +26,31 @@ function onClickClose1() {
     document.getElementById("fixed_block").style.display = "none"
 }
 
-function onClickClose2() {
-    document.getElementById("fixed_block").style.display = "none"
+// function onClickClose2() {
+//     document.getElementById("fixed_block").style.display = "none"
 
-}
+// }
 
 
-    let textArray = ["M","y"," ", "p", "a", "g", "e"];
-    let check = 0;
-    setInterval(function typing( ) {
-        if (check < textArray.length){
-           document.getElementById("textH1").textContent += (textArray[check])
-       check++
-        }
+    // let textArray = ["M","y"," ", "p", "a", "g", "e"];
+    // let check = 0;
+    // setInterval(function typing( ) {
+    //     if (check < textArray.length){
+    //        document.getElementById("textH1").textContent += (textArray[check])
+    //    check++
+    //     }
         
-    }, 200)
+    // }, 200)
+    let text = 'My page';
 
+    let check = 0;
+
+   function slow(){
+        if(check < text.length) {
+        document.getElementById("textH1").textContent += text[check];
+        document.getElementById("textH1").style.fontSize = "38px";
+        check++;
+        setTimeout(slow, 100);
+        }
+    }
+    setTimeout(slow(), 10)
