@@ -40,9 +40,7 @@ function onClickClose1() {
     //    check++
     //     }
         
-    // }, 200)
     let text = 'My page';
-
     let check = 0;
 
    function slow(){
