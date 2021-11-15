@@ -33,15 +33,31 @@
             let textArray = ['H','E','L','L','O']
             let check = 0;
 
-           function slow(){
-                if(check < text.length) {
-                document.getElementById("text").textContent += text[check];
-                document.getElementById("text").style.fontSize = "38px";
-                check++;
-                setTimeout(slow, 100);
+        //    function slow(){
+        //         if(check < text.length) {
+        //         document.getElementById("text").textContent += text[check];
+        //         document.getElementById("text").style.fontSize = "38px";
+        //         check++;
+        //         setTimeout(slow, 100);
+        //         }
+        //     }
+
+
+        //     setTimeout(slow(), 10)
+
+
+        
+            
+
+            function addCartItem(opts){
+                for(i = 0; i < text.length; i++) {
+                    setTimeout(function() {
+                        console.log(i++)
+
+                } , 1000 * i )
                 }
             }
-            setTimeout(slow(), 10)
+            addCartItem(7)
 
 
             

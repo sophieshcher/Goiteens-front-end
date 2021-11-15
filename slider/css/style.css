@@ -1,21 +1,35 @@
 .slider {
     width: 50%;
     margin: 5% auto;
-    text-align: right;
+    text-align: center;
     position: relative;
+    color: #333;
 }
 img {
-    max-width: 100%;
+    width: 50%;
+    display: inline-block;
+    /* margin: auto auto; */
 }
 
 button {
-    width: 50px;
-    height: 20px;
+    width: 100px;
+    height: 50px;
     background-color: transparent;
-    border: tomato 2px solid;
+    border: rgb(102, 194, 236) 2px solid;
+    border-radius: 5px;
+    background-color: rgb(102, 194, 236);
     top: 110%;
     cursor: pointer;
+    color: #333;
+
 }
+
+button:hover {
+    background-color: rgb(76, 173, 218);
+    border: rgb(76, 173, 218) 2px solid;
+    box-shadow: 1px 1px 10px rgba(56, 56, 56, 0.3);
+}
+
 #left_button {
     position: absolute;
     left: -10%;
