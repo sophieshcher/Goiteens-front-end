@@ -55,6 +55,7 @@ nav > .logo {
     justify-content: center;
     align-items: center;
   margin-bottom: 30px;
+  /* color: rgb(79, 83, 163); */
 
 }
 
@@ -119,6 +120,14 @@ header > p {
     cursor: pointer;
 }
 
+.header_button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
 .toggle {
     align-self: flex-start;
     margin: 20px 0px 0px 20px;
@@ -133,6 +142,34 @@ header > p {
     border-radius: 1px;
     cursor: pointer;
    
+}
+
+.nightDay {
+    color: white;
+    background: transparent;
+    
+    border: none;
+    padding: 12px 15px;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+.nightDay > p {
+    transition: 300ms;
+    font-size: 19px;
+}
+
+.nightDay > p:hover {
+   color: #f5e7f8;
+   font-size: 17px;
+   letter-spacing: 3px;
+    text-shadow: 1px 1px 20px rgb(221, 185, 230),
+    1px 1px 40px #ead7ee,
+    1px 1px 60px #e3cee7,
+    1px 1px 80px #e3cee7,
+    1px 1px 100px #e3cee7,
+    1px 1px 120px #e3cee7,
+    1px 1px 150px #e3cee7;
 }
 
 main {

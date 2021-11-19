@@ -1,34 +1,145 @@
-.slider {
+
+body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+
+  .slider {
     width: 50%;
     margin: 5% auto;
     text-align: center;
     position: relative;
     color: #333;
+    font-family: 'Lato', sans-serif;
 }
 img {
     width: 50%;
     display: inline-block;
     /* margin: auto auto; */
+    margin-bottom: 30px;
 }
 
-button {
+  button {
     width: 100px;
     height: 50px;
-    background-color: transparent;
-    border: rgb(102, 194, 236) 2px solid;
+    background-color: #333;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    border: transparent;
     border-radius: 5px;
-    background-color: rgb(102, 194, 236);
-    top: 110%;
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(102, 194, 236,  .6);
+
     cursor: pointer;
     color: #333;
+    font-size: 20px;
     transition: 300ms;
+    box-shadow: 2px 2px 10px rgba(20, 20, 20, .6);
+    /* position: absolute; */
+  }
+
+  button:first-of-type {
+    position: absolute;
+    left: 30%;
+    bottom: 20%;
+  }
+  
+
+  button:last-of-type{
+      position: absolute;
+      right: 30%;
+      bottom: 20%;
+
+  }
+
+  button:hover {
+    background-color: rgba(76, 173, 218, .6);
+    box-shadow: 1px 1px 10px rgba(56, 56, 56, 0.3);
+  }
+
+
+
+
+
+/* .slider::before, .slider::after {
+
+    content: "Right";
+    width: 100px;
+    height: 50px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: transparent;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(102, 194, 236,  .6);
+
+    cursor: pointer;
+    color: #333;
+    font-size: 20px;
+    transition: 300ms;
+    box-shadow: 2px 2px 10px rgba(20, 20, 20, .6);
+    position: absolute;
+} */
+
+/* .slider::before , .leftButton{
+    bottom: 0;
+    content: "Left";
+    width: 100px;
+    height: 50px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: transparent;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(102, 194, 236,  .6);
+
+    cursor: pointer;
+    color: #333;
+    font-size: 20px;
+    transition: 300ms;
+    box-shadow: 2px 2px 10px rgba(20, 20, 20, .6);
+    position: absolute;
 }
 
-button:hover {
-    background-color: rgb(76, 173, 218);
-    border: rgb(76, 173, 218) 2px solid;
-    box-shadow: 1px 1px 10px rgba(56, 56, 56, 0.3);
+.slider::after {
+    right: 0;
+    content: "Left";
+    bottom: 0;
+    content: "Right";
+    width: 100px;
+    height: 50px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: transparent;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(102, 194, 236,  .6);
+
+    cursor: pointer;
+    color: #333;
+    font-size: 20px;
+    transition: 300ms;
+    box-shadow: 2px 2px 10px rgba(20, 20, 20, .6);
+    position: absolute;
 }
+
+.slider:hover::before, .slider:hover::after {
+    background-color: rgba(76, 173, 218, .6);
+    opacity: 1;
+    box-shadow: 1px 1px 10px rgba(56, 56, 56, 0.3);
+} */
+
+
 
 #left_button {
     position: absolute;
