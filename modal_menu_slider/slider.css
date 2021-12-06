@@ -57,11 +57,3 @@ button:hover {
   box-shadow: 1px 1px 10px rgba(56, 56, 56, 0.3);
 }
 
-#left_button {
-  position: absolute;
-  left: -10%;
-}
-#right_button {
-  position: absolute;
-  right: -10%;
-}

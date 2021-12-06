@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cookies</title>
+</head>
+<body id= "body">
+    <button id="button">Save Cookie</button>
+    <button id="button1">Background</button>
+    <input type="text" id="input">
+    <script>
+        document.getElementById('button').addEventListener("click", cookieSave);
+        document.getElementById('button1').addEventListener("click", changeBackground);
+        function cookieSave() {
+            let selectedBackgroundColor = document.getElementById('input').value;
+            document.cookie = "background-color=" + selectedBackgroundColor;
+        }
+            let cookieSaved = document.cookie;
+            let cookieSavedArray = cookieSaved.split(";")
+        for( let i = 0; i < cookieSavedArray.length; i++ ) {
+                if(cookieSavedArray[i].includes("background-color=")) {
+                    console.log(cookieSavedArray[i]);
+                    let cookieSaved = document.cookie;
+                    console.log(cookieSavedArray[i].split("=").pop());
+
+                }}
+
+        function changeBackground() {
+            // document.getElementById('body').style.background = cookieSaved.split(";")
+            cookieSaved = document.cookie;
+            console.log(cookieSavedArray);
+            cookieSavedArray = cookieSaved.split(";");
+            for( let i = 0; i < cookieSavedArray.length; i++ ) {
+                if(cookieSavedArray[i].includes("background-color=")) {
+                    console.log(cookieSavedArray[i]);
+                    let cookieSaved = document.cookie;
+                    document.getElementById("body").style.backgroundColor = cookieSavedArray[i].split("=").pop();
+
+                }
+            }
+        }
+
+
+    </script>
+</body>
+</html>

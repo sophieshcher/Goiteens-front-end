@@ -1,0 +1,189 @@
+#cinema {
+    margin: 40px auto;
+    width: 40%;
+    height: 55%;
+}
+
+.ticketsText {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #333;
+}
+
+.places > button {
+    width: 40px;
+    height: 25px;
+      margin: 10px;
+      color: #333;
+  }
+
+#cheaperSection > button {
+    background: rgb(144, 238, 144);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 200ms;
+    width: 40px;
+    height: 25px;
+      margin: 10px;
+      color: #333;
+}
+
+#cheaperSection > button:hover {
+    background: rgb(166, 226, 166);
+    box-shadow: 1px 1px 5px rgba(109, 109, 109, .5);
+}
+
+
+
+.places {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+#moreExpensiveSection > button {
+    margin: 15px 20px;
+    background: rgb(210, 182, 255);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+#moreExpensiveSection > button:hover {
+    background: rgb(216, 198, 247);
+    box-shadow: 1px 1px 5px rgba(109, 109, 109, .5);
+}
+
+.priceWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.priceWrapper {
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.cheaperSectionPrice {
+    width: 50px;
+    height: 25px;
+    background: lightgreen;
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+.moreExpensiveSectionPrice {
+    background: rgb(210, 182, 255);
+    border: none;
+    border-radius: 2px;
+    width: 50px;
+    height: 25px;
+    display: inline-block;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+
+#submitButton {
+    margin: 30px auto ;
+    border: none;
+    background-color: rgb(227, 252, 252);
+    color: #333;
+    width: 100px;
+    height: 30px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 3px;
+    transition: 200ms;
+    display: block;
+
+
+}
+
+#submitButton:hover {
+    background-color: rgb(198, 226, 226);
+    box-shadow: 1px 1px 10px rgba(153, 153, 153, 0.4);
+}
+
+#HowMuchToPay {
+    width: 300px;
+    background-color: rgb(232, 238, 241);
+    border: 2px solid rgb(224, 224, 224);
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    animation-name: modalopen;
+    animation-duration: .6s;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#YourPrice {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #333;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#submitButtonTwo {
+    margin: 30px auto ;
+    border: none;
+    background-color: rgb(227, 252, 252);
+    color: #333;
+    width: 100px;
+    height: 30px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 3px;
+    transition: 200ms;
+    display: block;
+}
+
+#submitButtonTwo:hover {
+    background-color: rgb(198, 226, 226);
+    box-shadow: 1px 1px 10px rgba(153, 153, 153, 0.4);
+}
+
+#HowMuchToPay > p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+}
+
+@keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes modalclose {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
