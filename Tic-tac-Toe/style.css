@@ -38,11 +38,12 @@
   justify-content: center;
   align-items: center;
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
 
 #XWon {
-  width: 300px;
-  height: 200px;
+  width: 200px;
+  height: 100px;
   background-color: rgb(148, 238, 175);
   position: absolute;
   top: 50%;
@@ -50,7 +51,7 @@
   margin-right: -50%;
   transform: translate(-50%, -50%);
   border: 2px solid rgb(176, 231, 169);
-  box-shadow: 10px 10px 100px rgba(92, 92, 92, 0.7);
+  box-shadow: 20px 20px 100px rgba(51, 51, 51, 0.9);
   display: none;
   animation-name: modalopen;
   animation-duration: var(--modal-duration);
@@ -62,15 +63,15 @@
   font-size: 30px;
   font-style: italic;
   text-align: center;
-  margin-top: 80px;
+
 }
 
 #OWon {
-  width: 300px;
-  height: 200px;
-  height: 200px;
+  width: 200px;
+  height: 100px;
+
   background-color: rgb(148, 238, 175);
-  box-shadow: 10px 10px 100px rgba(92, 92, 92, 0.7);
+  box-shadow: 20px 20px 100px rgba(51, 51, 51, 0.9);
   border: 2px solid rgb(176, 231, 169);
   position: absolute;
   top: 50%;
@@ -88,15 +89,15 @@
   font-size: 30px;
   font-style: italic;
   text-align: center;
-  margin-top: 80px;
+
 }
 
 #NobodyWon {
-  width: 300px;
-  height: 200px;
-  height: 200px;
+  width: 200px;
+  height: 100px;
+
   background-color: rgb(240, 130, 40);
-  box-shadow: 10px 10px 100px rgba(92, 92, 92, 0.7);
+  box-shadow: 20px 20px 100px rgba(51, 51, 51, 0.9);
   border: 2px solid rgb(238, 105, 17);
   position: absolute;
   top: 50%;
@@ -113,7 +114,7 @@
   font-size: 30px;
   font-style: italic;
   text-align: center;
-  margin-top: 80px;
+
 }
 
 @keyframes modalopen {
