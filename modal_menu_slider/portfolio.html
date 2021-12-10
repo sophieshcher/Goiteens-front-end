@@ -33,24 +33,27 @@
             </li>
         </ul>
     </nav>
-    <header>
-        <button id="toggle" class="toggle">
+    <header id = "header"> 
+        <div class="header_button">
+            <button id="toggle" class="toggle">
             <i class="fa fa-bars fa-2x"></i>
         </button>
         <button id="nightDay" class="nightDay">
-            <p>Night</p>
+            <p id="nightDayText">Night</p>
         </button>
+    </div>
 
         <h1 id="textH1"></h1>
         
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem voluptas eum harum commodi similique impedit?</p>
+        <p id="text">My projects</p>
 
     </header>
-    <main>
+    <main id="main">
         <div class="text_wrapper">
             <ul>
-            <li class="a"><a class="projects" href="./calculator.html">Calculator</a></li>
-            <li class="a2 a"><a class="projects a2" href="./slider.html">Slider</a></li>
+            <li class="a"><a id="projects" class="projects a2" href="./calculator/calculator.html">Calculator</a></li>
+            <li class="a2 a"><a id="projects1" class="projects a2" href="./slider/index.html">Slider</a></li>
+            <li class="a2 a"><a id="projects2" class="projects a2" href="./Tic-tac-Toe/index.html">Tic-tac-Toe</a></li>
         </ul>
             
             
@@ -75,6 +78,41 @@
             }
 }
         setTimeout(slow(), 10)
+
+        let bottonCounter = 0;
+document.getElementById("nightDay").addEventListener("click", nightDayFunction);
+function nightDayFunction() { 
+
+    if(bottonCounter == 0){
+        document.getElementById("menu").style.background = "rgb(79, 83, 163)"
+        document.getElementById("main").style.background = "rgb(56, 54, 63)"
+        document.getElementById("header").style.background = "rgb(160, 164, 240)"
+        document.getElementById("textH1").style.color = '#333'
+        document.getElementById("nightDay").style.color = '#fff'
+        document.getElementById("nightDayText").textContent = "Day"
+        document.getElementById("projects").style.color = "rgb(226, 228, 248)"
+        document.getElementById("projects1").style.color = "rgb(226, 228, 248)"
+        document.getElementById("projects2").style.color = "rgb(226, 228, 248)"
+        bottonCounter++
+
+    } else {
+        document.getElementById("nightDayText").textContent = "Night"
+        document.getElementById("menu").style.background = "rgb(48, 51, 107)"
+        document.getElementById("main").style.background = "#fff"
+        document.getElementById("text").style.color = "#fff"
+        document.getElementById("header").style.background = "rgb(48, 51, 107)"
+        document.getElementById("textH1").style.color = '#fff'
+        document.getElementById("nightDay").style.color = '#fff'
+        document.getElementById("projects").style.color = "rgb(109, 109, 109)"
+        document.getElementById("projects1").style.color = "rgb(109, 109, 109)"
+        document.getElementById("projects2").style.color = "rgb(109, 109, 109)"
+        bottonCounter--
+
+        console.log(bottonCounter)
+    }
+
+    // document.getElementById("nightDayText:hover").style.textShadow = "1px 1px 20px rgb(240, 166, 255),1px 1px 40px #e3cee7,1px 1px 60px #e3cee7,1px 1px 80px #e3cee7,1px 1px 100px #e3cee7,1px 1px 120px #e3cee7,1px 1px 150px #e3cee7;"
+}
 
     </script>
 </html>

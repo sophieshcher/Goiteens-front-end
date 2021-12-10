@@ -19,21 +19,22 @@ function onClickSlide() {
 
 function onClickFixed() {
     document.getElementById("fixed_block").style.display = "initial"
-    document.getElementById("fade").style.display = "block"
+    // document.getElementById("fade").style.display = "block"
 }
 
 function onClickClose1() {
     document.getElementById("fixed_block").style.display = "none"
 }
 
-let bottonCounter = 0;
 
+let bottonCounter = 0;
 document.getElementById("nightDay").addEventListener("click", nightDayFunction);
-let dGEBI = document.getElementById
 function nightDayFunction() { 
-    if(bottonCounter === 0){
+
+    if(bottonCounter == 0){
         document.getElementById("menu").style.background = "rgb(79, 83, 163)"
         document.getElementById("main").style.background = "rgb(56, 54, 63)"
+
         document.getElementById("text").style.color = "#444"
         document.getElementById("text1").style.color = "#fff"
         document.getElementById("text2").style.color = "#fff"
@@ -45,10 +46,26 @@ function nightDayFunction() {
         document.getElementById("textH1").style.color = '#333'
         document.getElementById("nightDay").style.color = '#fff'
         document.getElementById("nightDayText").textContent = "Day"
+
         bottonCounter++
+
     } else {
-        document.getElementById("menu").remove.style.background = "rgb(79, 83, 163)"
+        document.getElementById("nightDayText").textContent = "Night"
+        document.getElementById("menu").style.background = "rgb(48, 51, 107)"
+        document.getElementById("main").style.background = "#fff"
+        document.getElementById("text").style.color = "#fff"
+        document.getElementById("text1").style.color = "#333"
+        document.getElementById("text2").style.color = "#333"
+        document.getElementById("text3").style.color = "#333"
+        document.getElementById("text4").style.color = "#333"
+        document.getElementById("text5").style.color = "#333"
+        document.getElementById("text6").style.color = "#333"
+        document.getElementById("header").style.background = "rgb(48, 51, 107)"
+        document.getElementById("textH1").style.color = '#fff'
+        document.getElementById("nightDay").style.color = '#fff'
         bottonCounter--
+
+        console.log(bottonCounter)
     }
 
     // document.getElementById("nightDayText:hover").style.textShadow = "1px 1px 20px rgb(240, 166, 255),1px 1px 40px #e3cee7,1px 1px 60px #e3cee7,1px 1px 80px #e3cee7,1px 1px 100px #e3cee7,1px 1px 120px #e3cee7,1px 1px 150px #e3cee7;"

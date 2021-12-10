@@ -18,22 +18,29 @@ body {
 
     
 }
-/* 
-li {
-    margin-bottom: 30px;
-} */
+
+
+#text {
+   text-align: center;
+   transition: 200ms;
+}
 
 .projects{
     /* text-align: center; */
     font-weight: 700;
     color: rgb(109, 109, 109);
 
-    font-size: 50px;
+    font-size: 40px;
     transition: 0.5s;
     cursor: pointer;
 }
 
 .a2 {
+    display: flex;
+    justify-content: center;
+}
+
+.a3 {
     display: flex;
     justify-content: center;
 }
@@ -44,11 +51,11 @@ li {
 
 .projects:hover {
     letter-spacing: 5px;
-    color: rgb(48, 51, 107);
-    text-shadow: 0 0 10px rgb(136, 139, 189),
+    /* color: rgb(160, 160, 160); */
+    text-shadow: 0 0 10px rgb(173, 176, 224),
                  0 0 20px rgb(137, 140, 196),
-                 0 0 40px rgb(90, 93, 156),
-                 0 0 80px rgb(90, 93, 156),
-                 0 0 120px rgb(90, 93, 156),
-                 0 0 180px rgb(90, 93, 156);
+                 0 0 40px rgb(182, 184, 226),
+                 0 0 80px rgb(170, 173, 219),
+                 0 0 120px rgb(190, 192, 241),
+                 0 0 180px rgb(193, 196, 255);
 }

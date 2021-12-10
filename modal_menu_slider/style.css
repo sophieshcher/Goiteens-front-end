@@ -34,6 +34,7 @@ body.show-nav {
 
 #textH1 {
     height: 60px;
+    transition: 200ms;
 }
 
 nav {
@@ -47,7 +48,7 @@ nav {
     z-index: 100;
     transform: translateX(-100%);
     padding-top: 30px;
-
+    transition: 200ms;
 }
 
 nav > .logo {
@@ -86,7 +87,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: var(--primary-color);
-
+    transition: 200ms;
 }
 
 header > h1 {
@@ -96,6 +97,7 @@ header > h1 {
     color: white;
     margin-bottom: 30px;
     height: 60px;
+    transition: 200ms;
 }
 
 header > p {
@@ -105,6 +107,7 @@ header > p {
     color: white;
     margin-bottom: 40px;
     width: 65%;
+    transition: 200ms;
 }
 
 .cta_btn {
@@ -147,7 +150,7 @@ header > p {
 .nightDay {
     color: white;
     background: transparent;
-    
+    transition: 200ms;
     border: none;
     padding: 12px 15px;
     border-radius: 1px;
@@ -157,6 +160,7 @@ header > p {
 .nightDay > p {
     transition: 300ms;
     font-size: 19px;
+    transition: 200ms;
 }
 
 .nightDay > p:hover {
@@ -178,6 +182,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 200ms;
 }
 
 .section_2 {
@@ -230,7 +235,7 @@ p {
     box-shadow: -50px 50px 1000px rgba(0, 0, 0, 0.985);
     display: none;
     /* display: initial; */
-    z-index: 200;
+    
     animation-name: modalopen;
     animation-duration: var(--modal-duration);
 }
@@ -266,6 +271,7 @@ p {
 .fixed_block > p {
     padding: 10px 0px 0px 10px;
     font-size: 15px;
+    z-index: 10;
 }
 
 .form_wrapper {
