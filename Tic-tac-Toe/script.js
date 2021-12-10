@@ -26,7 +26,10 @@ area.addEventListener('click', e => {
                     e.target.innerHTML = 'X' 
                     document.getElementById("XWon").style.display = "block"
                    }
-                   else if(arrayX.length == 5 &&( !arrayX.includes(secondX)  || !arrayX.includes(firstX) || !arrayX.includes(thirdX))) {
+                   else if(arrayX.length == 5 && (arrayX.includes(secondX) && arrayX.includes(firstX) && arrayX.includes(thirdX))) {
+                    document.getElementById("XWon").style.display = "block"
+                   }
+                   else if(arrayX.length == 5 && !(arrayX.includes(secondX) && arrayX.includes(firstX) && arrayX.includes(thirdX))) {
                     document.getElementById("NobodyWon").style.display = "block"
                    }
                 }
