@@ -1,32 +1,25 @@
-// 1.include script.js in your HTML document
-let divLength = document.getElementById("slider").children.length;
+// a. Please, include slider.js in you HTML document
+// b. Please, connect css file 'style.css' into your HTML document
+// b. Please, in your HTML document create div with id slider and it's children elements:
+// 1. img with id named sliderImg0, sliderImg1, sliderImg2 ... 
 
+let divLength = document.getElementById("slider").children.length;
 let sliderImgs = [];
 
 for (i = 0; i < divLength; i++) {
-  let sliderImgName = "sliderImg" + i;
-  sliderImgs.push(document.getElementById(sliderImgName).src);
-  // let newSrc = "." + sliderImgs[i].slice(68, sliderImgs[i].length)
-  // sliderImgs.pop()
-  // sliderImgs.push(newSrc)
-  // console.log(newSrc)
+  sliderImgs.push(document.getElementById("sliderImg" + i).src);
 }
 
-
-
-// 2.Please, in your  HTML document create div with class slider and it children:
-// 2.1 img with id named sliderImg and src with value of path of your first img
-// 2.2 button with id left_button and make function moveLeftFunction like this: document.getElementById("left_button").addEventListener("click", moveLeftFunction);
-//
-
 let currentImg = 0;
-var button = document.createElement("button");
-button.innerHTML = "Left";
+let sliderButtons = document.getElementById("slider");
+let buttonLeft = document.createElement("button");
 
-var body = document.getElementsByTagName("body")[0];
-body.appendChild(button);
+buttonLeft.innerHTML = "Left";
 
-button.addEventListener("click", function () {
+
+sliderButtons.appendChild(buttonLeft);
+
+buttonLeft.addEventListener("click", function () {
   document.getElementById("sliderImg0").src = sliderImgs[currentImg];
 
   if (currentImg <= sliderImgs.length && currentImg > 0) {
@@ -38,13 +31,12 @@ button.addEventListener("click", function () {
   }
 });
 
-var button = document.createElement("button");
-button.innerHTML = "Right";
+let buttonRight = document.createElement("button");
+buttonRight.innerHTML = "Right";
 
-var body = document.getElementsByTagName("body")[0];
-body.appendChild(button);
+sliderButtons.appendChild(buttonRight);
 
-button.addEventListener("click", function () {
+buttonRight.addEventListener("click", function () {
   if (currentImg <= sliderImgs.length - 2) {
     currentImg++;
     document.getElementById("sliderImg0").src = sliderImgs[currentImg];

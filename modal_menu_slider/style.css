@@ -75,7 +75,7 @@ nav > ul > li:last-child {
 }
 
 a {
-    color: white;
+    color: rgb(230, 230, 230);
     font-family: var(--lato-font);
     text-decoration: none;
     
@@ -240,9 +240,7 @@ p {
     animation-duration: var(--modal-duration);
 }
 
-/* .fixed_block {
-    display: ;
-} */
+
 
 
 

@@ -1,21 +1,11 @@
-// function onClickSlide() {
-//     document.body.classList.toggle('show-nav');
-
-// }
+let cookiArray = []
 
 document.getElementById("toggle").addEventListener("click", onClickSlide);
 function onClickSlide() {
     document.body.classList.toggle('show-nav');
 }
 
-// document.getElementById("my_button").addEventListener("click", onAllClick);
-// document.getElementById("toggle").addEventListener("click", onClickSlide);
 
-// document.getElementById("open").addEventListener("click", showForm);
-
-// function showForm() {
-//     document.getElementById("modal").classList.add('show-modal');
-// }
 
 function onClickFixed() {
     document.getElementById("fixed_block").style.display = "initial"
@@ -27,7 +17,7 @@ function onClickClose1() {
 }
 
 
-let bottonCounter = 0;
+let bottonCounter = 0
 document.getElementById("nightDay").addEventListener("click", nightDayFunction);
 function nightDayFunction() { 
 
@@ -46,6 +36,16 @@ function nightDayFunction() {
         document.getElementById("textH1").style.color = '#333'
         document.getElementById("nightDay").style.color = '#fff'
         document.getElementById("nightDayText").textContent = "Day"
+        document.getElementById("fixed_block_head").style.background = 'rgb(160, 164, 240)'
+        document.getElementById("fixed_block").style.background = 'rgb(56, 54, 63)'
+        document.getElementById("formText").style.color = 'rgb(230, 230, 230)'
+        document.getElementById("formText1").style.color = 'rgb(230, 230, 230)'
+        document.getElementById("formText2").style.color = 'rgb(230, 230, 230)'
+        document.getElementById("formText3").style.color = 'rgb(230, 230, 230)'
+        document.getElementById("formMainText").style.color = 'rgb(230, 230, 230)'
+        document.getElementById("fixed_block_head_h2").style.color = 'rgb(56, 54, 63)'
+
+        document.cookie = "dark_mode=" + bottonCounter;
 
         bottonCounter++
 
@@ -63,6 +63,16 @@ function nightDayFunction() {
         document.getElementById("header").style.background = "rgb(48, 51, 107)"
         document.getElementById("textH1").style.color = '#fff'
         document.getElementById("nightDay").style.color = '#fff'
+
+        document.getElementById("fixed_block_head").style.background = 'rgb(48, 51, 107)'
+        document.getElementById("fixed_block").style.background = '#fff'
+        document.getElementById("formText").style.color = '#333'
+        document.getElementById("formText1").style.color = '#333'
+        document.getElementById("formText2").style.color = '#333'
+        document.getElementById("formText3").style.color = '#333'
+        document.getElementById("formMainText").style.color = '#333'
+        document.getElementById("fixed_block_head_h2").style.color = '#fff'
+
         bottonCounter--
 
         console.log(bottonCounter)
@@ -71,19 +81,8 @@ function nightDayFunction() {
     // document.getElementById("nightDayText:hover").style.textShadow = "1px 1px 20px rgb(240, 166, 255),1px 1px 40px #e3cee7,1px 1px 60px #e3cee7,1px 1px 80px #e3cee7,1px 1px 100px #e3cee7,1px 1px 120px #e3cee7,1px 1px 150px #e3cee7;"
 }
 
-// function onClickClose2() {
-//     document.getElementById("fixed_block").style.display = "none"
-
-// }
 
 
-    // let textArray = ["M","y"," ", "p", "a", "g", "e"];
-    // let check = 0;
-    // setInterval(function typing( ) {
-    //     if (check < textArray.length){
-    //        document.getElementById("textH1").textContent += (textArray[check])
-    //    check++
-    //     }
         
     let text = 'My page';
     let check = 0;

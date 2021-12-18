@@ -22,7 +22,7 @@
 #area {
   width: 300px;
   height: 300px;
-  background-color: rgb(211, 211, 211);
+
   display: flex;
   flex-wrap: wrap;
 }
@@ -39,6 +39,12 @@
   align-items: center;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
+  background: rgb(235, 235, 235);
+}
+
+
+.box:hover {
+  background: rgb(216, 216, 216);
 }
 
 #XWon {

@@ -1,16 +1,12 @@
-body {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-}
 
-.slider {
-  width: 50%;
-  margin: 5% auto;
+#slider {
+  width: 700px;
+  height: 600px;
   text-align: center;
   position: relative;
   color: #333;
   font-family: "Lato", sans-serif;
+  margin: 40px auto 0;
 }
 
 img {
@@ -18,11 +14,13 @@ img {
   display: inline-block;
   margin-bottom: 30px;
   display: none;
+
 }
 
 img:first-of-type {
   display: block;
   margin: 0 auto;
+
 }
 
 button {
@@ -32,36 +30,27 @@ button {
   border: transparent;
   border-radius: 5px;
   font-family: "Lato", sans-serif;
-  background-color: rgba(123, 187, 218, 0.8);
+  background-color: rgba(123, 187, 218, 1);
   cursor: pointer;
   color: #333;
   font-size: 20px;
   transition: 300ms;
   box-shadow: 2px 2px 10px rgba(20, 20, 20, 0.6);
+  position: absolute;
 }
 
 button:first-of-type {
-  position: absolute;
-  left: 30%;
-  bottom: 20%;
+left: 0;
+top: 80%;
 }
 
 button:last-of-type {
-  position: absolute;
-  right: 30%;
-  bottom: 20%;
+/* position: absolute; */
+right: 0;
+top: 80%;
 }
 
 button:hover {
-  background-color: rgba(76, 173, 218, 0.6);
+  background-color: rgba(76, 173, 218, 1);
   box-shadow: 1px 1px 10px rgba(56, 56, 56, 0.3);
-}
-
-#left_button {
-  position: absolute;
-  left: -10%;
-}
-#right_button {
-  position: absolute;
-  right: -10%;
 }
