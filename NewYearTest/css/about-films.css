@@ -1,0 +1,107 @@
+.about {
+    font-family: "Erica One", cursive;
+    text-shadow: -1px 6px 1px #ffd600;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 54px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #000000;
+    margin: 0 auto 50px auto;
+  }
+  
+  .P {
+    font-family: "Ledger", cursive;
+    margin: 0 auto;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .HP {
+    height: 500px;
+    width: auto;
+    margin: 0 auto;
+  }
+  
+  .P > h2 {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .P h2 {
+    margin: 25px 0;
+  }
+  
+  .P p {
+    width: 600px;
+    text-align: center;
+    margin: 0 auto 40px auto;
+    font-size: 20px;
+  }
+  
+  .P p:last-child {
+    margin: 0 auto;
+  }
+  
+  #main {
+    padding: 150px 150px 30px 150px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about {
+      font-size: 30px;
+      line-height: 36px;
+      margin: 0 auto 0 auto;
+    }
+  
+    .P {
+      padding-top: 100px;
+    }
+  
+    .HP {
+      height: 400px;
+      width: auto;
+    }
+  
+    .P p {
+      width: 550px;
+      font-size: 18px;
+    }
+  
+    #main {
+      padding: 70px 70px 30px 70px;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    .about {
+      font-size: 22px;
+      line-height: 26px;
+    }
+    
+    .P {
+      padding-top: 70px;
+    }
+    
+    .HP {
+      height: 270px;
+    }
+    
+    .P p {
+      width: 100%;
+      text-align: center;
+      margin: 0 auto 40px auto;
+      font-size: 16px;
+    }
+    
+    .P p:last-child {
+      margin: 0 auto;
+    }
+    
+    #main {
+      padding: 30px 20px;
+    }
+  }

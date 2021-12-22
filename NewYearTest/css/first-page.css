@@ -402,9 +402,9 @@ li {
     }
   }
 
-  @media screen and (max-width: 768px) {
-    .name-of-test {
-        font-size: 30px;
+  @media (max-width: 425px) {
+    #h1 {
+        font-size: 45px;
         margin: 11px auto 12px auto;
       }
   }

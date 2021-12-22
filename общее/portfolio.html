@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    <!-- font-family: 'Lato', sans-serif; -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./portfolio.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav id = "menu">
+        <div class="logo">
+            <img src="./img/photo3.jpeg" alt="photo">
+        </div>
+        <ul>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./portfolio.html" target="_blank">Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+            <li>
+                <a href="#">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+    <header id = "header"> 
+        <div class="header_button">
+            <button id="toggle" class="toggle">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+        <button id="nightDay" class="nightDay">
+            <p id="nightDayText">Night</p>
+        </button>
+    </div>
+
+        <h1 id="textH1"></h1>
+        
+        <p id="text">Найкращы проекти групи Genious Clan</p>
+
+    </header>
+    <main id="main">
+        <div class="text_wrapper">
+            <ul>
+            <li class="a"><a id="projects" class="projects a2" href="./calculator/calculator.html">Calculetor</a></li>
+            <li class="a2 a"><a id="projects1" class="projects a2" href="./slider/index.html">Slider</a></li>
+            <li class="a2 a"><a id="projects2" class="projects a2" href="./Tic-tac-Toe/index.html">Tic-tac-Toe</a></li>
+        </ul>
+            
+            
+        </div>
+    </main>
+</body>
+<script>
+    document.getElementById("toggle").addEventListener("click", onClickSlide);
+        function onClickSlide() {
+            document.body.classList.toggle('show-nav');
+        }
+
+        let text = 'Portfolio';
+        let check = 0;
+
+        function slow(){
+            if(check < text.length) {
+            document.getElementById("textH1").textContent += text[check];
+            document.getElementById("textH1").style.fontSize = "38px";
+            check++;
+            setTimeout(slow, 100);
+            }
+}
+        setTimeout(slow(), 10)
+
+        let bottonCounter = 0;
+document.getElementById("nightDay").addEventListener("click", nightDayFunction);
+function nightDayFunction() { 
+
+    if(bottonCounter == 0){
+        document.getElementById("menu").style.background = "rgb(79, 83, 163)"
+        document.getElementById("main").style.background = "rgb(56, 54, 63)"
+        document.getElementById("header").style.background = "rgb(160, 164, 240)"
+        document.getElementById("textH1").style.color = '#333'
+        document.getElementById("nightDay").style.color = '#fff'
+        document.getElementById("nightDayText").textContent = "Day"
+        document.getElementById("projects").style.color = "rgb(226, 228, 248)"
+        document.getElementById("projects1").style.color = "rgb(226, 228, 248)"
+        document.getElementById("projects2").style.color = "rgb(226, 228, 248)"
+        bottonCounter++
+
+    } else {
+        document.getElementById("nightDayText").textContent = "Night"
+        document.getElementById("menu").style.background = "rgb(48, 51, 107)"
+        document.getElementById("main").style.background = "#fff"
+        document.getElementById("text").style.color = "#fff"
+        document.getElementById("header").style.background = "rgb(48, 51, 107)"
+        document.getElementById("textH1").style.color = '#fff'
+        document.getElementById("nightDay").style.color = '#fff'
+        document.getElementById("projects").style.color = "rgb(109, 109, 109)"
+        document.getElementById("projects1").style.color = "rgb(109, 109, 109)"
+        document.getElementById("projects2").style.color = "rgb(109, 109, 109)"
+        bottonCounter--
+
+        console.log(bottonCounter)
+    }
+
+    // document.getElementById("nightDayText:hover").style.textShadow = "1px 1px 20px rgb(240, 166, 255),1px 1px 40px #e3cee7,1px 1px 60px #e3cee7,1px 1px 80px #e3cee7,1px 1px 100px #e3cee7,1px 1px 120px #e3cee7,1px 1px 150px #e3cee7;"
+}
+
+    </script>
+</html>

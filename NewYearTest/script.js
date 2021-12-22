@@ -1,99 +1,99 @@
 let quiz = [
     {    
-    "question" : "Любишь ли ты Новогодние(Рождественские) фильмы?",
+    "question" : "Do you like New Year's (Christmas) films?",
     "answer" : {
-        "homeAlone": "Да очень",
-        "harryPotter": "По настроению",
-        "lastChristmas": "Не люблю, грусно становится от понимания, что прошел еще один год",
-        "Grinch": "Не люблю вообще"
+        "homeAlone": "Yes very",
+        "harryPotter": "By mood",
+        "lastChristmas":"I do not like it, it becomes sad from the understanding that another year has passed.",
+        "Grinch": "I don't like at all"
     }
 },    {    
-    "question" : "Как ты предпочитаешь проводить НГ?",
+    "question" : "How do you prefer to conduct NY?",
     "answer" : {
-        "homeAlone": "Самому с вкусняшками",
-        "harryPotter": "Веселится в кругу друзей",
-        "lastChristmas": "В кругу семьи",
-        "Grinch": "Поесть и лечь спать"
+        "homeAlone": "Himself with tasty treats",
+        "harryPotter": "Having fun with friends",
+        "lastChristmas": "In the family",
+        "Grinch": "Eat and go to bed"
     }
 },
   {    
-    "question" : "Что ты любишь делать в новогоднюю ночь",
+    "question" : "What do you like to do on New Year's Eve",
     "answer" : {
-        "homeAlone": "Посмотреть фильмы",
-        "harryPotter": "Запускать салюты",
-        "lastChristmas": "Позагадывать много желаний",
-        "Grinch": "Съедать все салаты"
+        "homeAlone": "Watch movies",
+        "harryPotter": "Launch fireworks",
+        "lastChristmas": "Making a lot of wishes",
+        "Grinch": "Eat all the salads"
 
   
     }
 },
 {    
-    "question" : "Что ты любишь делать с подарками?",
+    "question" : "What do you like to do with gifts?",
     "answer" : {
-        "homeAlone": "Получать",
-        "harryPotter": "Дарить",
-        "lastChristmas": "По настроению",
-        "Grinch": "Вообще не люблю подарки, денги люблю"
+        "homeAlone":"Receive",
+        "harryPotter": "Present",
+        "lastChristmas": "By mood",
+        "Grinch": "I don't like gifts at all, I like money"
 
     }
 },
 {    
-    "question" : "Твое любимое НГ блюдо?",
+    "question" : "What's your favorite NY dish?",
     "answer" : {
-        "homeAlone": "Пицца, суши",
+        "homeAlone": "Pizza, sushi",
         "harryPotter": "Конфеты",
-        "lastChristmas": "Красная икра",
-        "Grinch": "Салаты"
+        "lastChristmas":"Candy",
+        "Grinch": "Salads"
 
     }
 },
 {    
-    "question" : "Поставили ли у тебя дома елку?",
+    "question" : "Have you put a Christmas tree in your house?",
     "answer" : {
-        "homeAlone": "Да очень",
-        "harryPotter": "Да! И украсил/ла",
-        "lastChristmas": "Нет, еще рано.",
-        "Grinch": "Нет, она будет осыпаться не люблю убирать"
+        "homeAlone":"Yes very",
+        "harryPotter": "Yes! And decorated",
+        "lastChristmas": "No, it's still early.",
+        "Grinch": "No, it will crumble, I do not like to clean up"
 
     }
 },
 {    
-    "question" : "Ты  уже писал(а) письмо Деду Морозу?",
+    "question" : "Have you already written a letter to Santa Claus?",
     "answer" : {
-        "homeAlone": "Да, конечно!",
-        "harryPotter": "Да, хочу быть волшебником и печатать деньги",
-        "lastChristmas": "Все триста пунктов на месте",
-        "Grinch": "Нет, я не верю в него."
+        "homeAlone": "Yes, sure!",
+        "harryPotter":"Yes, I want to be a magician and print money",
+        "lastChristmas": "All three hundred points in place",
+        "Grinch": "No, I don't believe in him."
 
     }
 },
 {    
-    "question" : "Отправляете ли вы поздравительные открытки?",
+    "question" :"Do you send greeting cards?",
     "answer" : {
-        "homeAlone": "Да, всем контактам которые у меня есть",
-        "harryPotter": "Да, родственникам и друзьям",
-        "lastChristmas": "Да, только самым близким",
-        "Grinch": "Нет, а зачем?"
+        "homeAlone": "Yes, to all the contacts I have",
+        "harryPotter": "Yes, to relatives and friends",
+        "lastChristmas": "Yes, only to the closest ones",
+        "Grinch": "No, why?"
 
     }
 },
 {    
-    "question" : "Дарите ли вы НГ подарки?",
+    "question" : "Do you give NY gifts?",
     "answer" : {
-        "homeAlone": "Да, стараюсь всем кого знаю",
-        "harryPotter": "Да, только семье",
-        "lastChristmas": "Да, только самым близким",
-        "Grinch": "Нет, люблю только получать"
+        "homeAlone": "Yes, I try to everyone I know",
+        "harryPotter":"Yes, only to the family",
+        "lastChristmas":"Yes, only to the closest ones",
+        "Grinch": "No, I only like to receive"
 
     }
 },
 {    
-    "question" : "Что ты любишь делать на Рождество?",
+    "question" : "What do you like to do for Christmas?",
     "answer" : {
-        "homeAlone": "Ходить в церковь",
-        "harryPotter": "Носить вечери",
-        "lastChristmas": "Колядовать",
-        "Grinch": "Все перечисленное"
+        "homeAlone":"Go to church",
+        "harryPotter": "To wear suppers",
+        "lastChristmas": "Carol",
+        "Grinch":"All of the above"
 
     }
 }
@@ -101,19 +101,19 @@ let quiz = [
 
 let answers = {
     "homeAlone" : {
-        "description" : "homeAlonehomeAlonehomeAlonehomeAlonehomeAlonehomeAlonehomeAlonehomeAlone",
+        "description" : "If you got the movie 'Home Alone', then you are still a child at heart. New Year is a very important holiday for you, which you are looking forward to. You are always ready for new adventures, believe that all dreams come true, especially on New Year's Eve, and of course you love gifts. You are not afraid of difficulties and you will always find advantages in a difficult situation.",
         "img" : "./img/homeAlone.jpeg"
     },
     "harryPotter" : {
-        "description" : "harryPotterharryPotterharryPotterharryPotterharryPotterharryPotterharryPotter",
+        "description" : "If you have the movie 'Harry Potter', New Year for you it is always something magical and mysterious. You are waiting for Santa Claus at any age and make a bunch of wishes, because you believe that they will all come true. You believe that as you celebrate the New Year, you will spend it, so you try to have a good time.",
         "img" : "./img/harryPotter.jpeg"
     },
     "lastChristmas" : {
-        "description" : "lastChristmaslastChristmaslastChristmaslastChristmaslastChristmaslastChristmas",
+        "description" : "If you got the movie 'Christmas for Two', then you prefer to spend the New Year in a romantic setting or with those closest to you. You adore giving gifts, and the best gratitude for you is the happy faces of those who receive them. If all the salads are not on the table, then the New Year will not be the New Year for you.",
         "img" : "./img/lastChristmas.jpeg"
     },
     "Grinch" : {
-        "description" : "GrinchGrinchGrinchGrinchGrinchGrinchGrinchGrinchGrinchGrinchGrinch",
+        "description" : "If you got the movie 'The Grinch', then most likely outwardly you are trying not to show your New Year's mood, pretending that for you these are just new numbers in the calendar. But in fact, you are looking forward to the new year to share the joy with the people closest to you. Our advice is to be sincere and remain a child at heart.",
         "img" : "./img/Grinch.jpeg"
     }
 }

@@ -1,0 +1,43 @@
+.card_wrapper {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+
+
+.card_wrapper > div {
+    background: forestgreen;
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+}
+
+#card1 {
+   /* background-image: url(./moon.png); */
+   background-size: contain;
+
+   transition: 200ms;
+
+}
+
+#card2 {
+    /* background-image: url(./star.png); */
+    background-size: contain;
+    transition: 200ms;
+}
+
+#card3 {
+    /* background-image: url(./star.png); */
+    background-size: contain;
+    transition: 200ms;
+}
+
+#card4 {
+    /* background-image: url(./moon.png); */
+    background-size: contain;
+    transition: 200ms;
+}
+

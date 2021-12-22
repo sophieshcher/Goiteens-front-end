@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    <!-- font-family: 'Lato', sans-serif; -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+</head>
+<body>
+    <nav id = "menu">
+        <div class="logo">
+            <img src="./img/photo3.jpeg" alt="photo">
+        </div>
+        <ul>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./portfolio.html" target="_blank">Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+            <li>
+                <a href="#">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+    <header id = "header"> 
+        <div class="header_button">
+            <button id="toggle" class="toggle">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+        <button id="nightDay" class="nightDay">
+            <p id="nightDayText">Night</p>
+        </button>
+    </div>
+        
+
+        <h1 id="textH1"></h1>
+        <p id = "text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem voluptas eum harum commodi similique impedit?</p>
+        <button class="cta_btn" id="open" onclick="onClickFixed()">Sign up</button>
+    </header>
+    <main id="main">
+        <section class="section_2">
+        <h2 id="text1">What is this page about?</h2>
+        <p id="text2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam facere voluptas velit delectus ab sit numquam optio iste ut commodi voluptatum omnis necessitatibus libero molestias quo fugiat, quidem, odit recusandae?
+        Eaque perferendis repellat voluptatibus itaque quidem aliquid iste quisquam a inventore accusamus voluptatem est, facere earum quo, veritatis voluptatum saepe. Fuga eum vel fugiat error atque labore laudantium voluptates provident.</p>
+        <p id="text3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero voluptates dolores laudantium reiciendis amet expedita hic minus magni, quam iste. Totam non dolore, labore praesentium suscipit veritatis ratione accusamus eius.</p>
+        <h2 id="text4">Tell me more</h2>
+        <p id="text5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam facere voluptas velit delectus ab sit numquam optio iste ut commodi voluptatum omnis necessitatibus libero molestias quo fugiat, quidem, odit recusandae?
+        Eaque perferendis repellat voluptatibus itaque quidem aliquid iste quisquam a inventore accusamus voluptatem est, facere earum quo, veritatis voluptatum saepe. Fuga eum vel fugiat error atque labore laudantium voluptates provident.</p>
+        <p id="text6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero voluptates dolores laudantium reiciendis amet expedita hic minus magni, quam iste. Totam non dolore, labore praesentium suscipit veritatis ratione accusamus eius.</p>
+    </section>
+    </main>
+    <footer></footer>
+    <div class="fade">
+    <div class="fixed_block" id="fixed_block">
+        <div id="fixed_block_head"  class="fixed_block_head">
+        <h2 id="fixed_block_head_h2" class="fixed_block_head_h2">Sign up</h2>
+        <button id="fixed_block_head_button" class="fixed_block_head_button" onclick="onClickClose1()"><img src="./img/icons8-удалить.svg" alt=""></button>
+    </div>
+        <p id="formMainText">Register with us to get offers, support and more</p>
+        <form class="form_wrapper" action="#">
+            <h3 id="formText" class="form_wrapper_h3">Name</h3>
+            <input type="text"
+            class = "fixed_block_input"
+            name="user-email"
+            required
+            placeholder="Enter Name">
+            <h3 id="formText1" class="form_wrapper_h3">Email</h3>
+            <input type="email"
+            class = "fixed_block_input"
+            name="user-email"
+            required
+            placeholder="Enter Email">
+            <h3 id="formText2" class="form_wrapper_h3">Password</h3>
+            <input type="password"
+            class = "fixed_block_input"
+            name="user-subject"
+            required
+            placeholder="Enter Password">
+            <h3 id="formText3" class="form_wrapper_h3">Confirm Password</h3>
+            <input type="password"
+            class = "fixed_block_input"
+            name="user-subject"
+            required
+            placeholder="Confirm Password">
+            <input class="input_button" type="submit" onclick="onClickClose2()">
+        </form>
+    </div>
+</div>
+    <script src="modal_menu_slider.js"></script>
+</body>
+</html>
