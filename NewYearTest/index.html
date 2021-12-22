@@ -1,24 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />    <link rel="stylesheet" href="./style.css">
-    
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/first-page.css" />
+    <title>New Year Test</title>
+  </head>
+  <body id="body">
+    <header class="header">
+      <div class="logo">
+        <h2 class="name-of-team">
+          <span class="yellow">G</span>en<span class="yellow">i</span>us
+          <span class="yellow">C</span>l<span class="yellow">a</span>n
+        </h2>
+        <div class="info">
+          <p><a href="#" class="info-link">about films</a></p>
+          <p><a href="#" class="info-link">our projects</a></p>
+        </div>
+      </div>
+      <div class="z-index">      
+          <h1 id="h1" class="name-of-test">Test for new year movie</h1>
+      <p class="header-text">
+        If you want us to add your movie to our test, then click on the button
+        below
+      </p>
+      <button onclick="openClick()" class="suggest-btn">suggest a movie</button>
+    </div>
+
+      
+    </header>
     <main>
-        <section class="test">
-            <div class="question"></div>
-            <div class="answer"></div>
-            <div class="stepCounter"><span class="stepCounterNamber"></span><span>/</span><span>9</span></div>
-        </section>
+      <section class="section1">
+        <p class="yellow-text">New Year and Christmas are coming soon,</p>
+        <p class="white-text">but you do not know which movie to watch?</p>
+
+        <p class="yellow-text">Take our online test and we will select a</p>
+        <p class="white-text">movie for you ourselves!</p>
+        <a class="start-btn" href="last-page.html">Let's start</a>
+        <!-- <button class="start-btn">Let's start</button> -->
+      </section>
+
+      <section class="section2">
+        <p class="wishes1">
+          To make you really enjoy the movie, the team
+          <span>Genius clan</span> asks you to answer questions honestly.
+        </p>
+        <p class="wishes2">Have a nice pastime!</p>
+      </section>
+
+      <div class="offer" id="offer">
+        <div class="x">
+          <div class="close" onclick="closeClick()">
+            <img src="./img/close (1).png" alt="" />
+          </div>
+        </div>
+        <div class="text-offer">
+          <p>Write your name</p>
+          <input type="text" class="your-name" />
+          <p>Write your email</p>
+          <input type="email" class="your-email" />
+          <p>Write your movie</p>
+          <input type="text" class="your-movie" />
+        </div>
+        <input
+          type="submit"
+          value="submit"
+          class="submit-movie"
+          onclick="closeClick()"
+        />
+      </div>
     </main>
-    <script src="script.js"></script>
-</body>
+    <script >
+        function openClick() {
+    document.getElementById("offer").style.display = "block";
+}
+
+function closeClick() {
+    document.getElementById("offer").style.display = "none";
+}
+    </script>
+  </body>
 </html>

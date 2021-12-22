@@ -81,7 +81,7 @@ let quiz = [
     "question" : "Дарите ли вы НГ подарки?",
     "answer" : {
         "homeAlone": "Да, стараюсь всем кого знаю",
-        "harryPotter": "Да, стараюсь всем кого знаю",
+        "harryPotter": "Да, только семье",
         "lastChristmas": "Да, только самым близким",
         "Grinch": "Нет, люблю только получать"
 
@@ -117,6 +117,8 @@ let answers = {
         "img" : "./img/Grinch.jpeg"
     }
 }
+
+
 
 
 window.onload = function() {
@@ -164,16 +166,26 @@ window.onload = function() {
         let inspect = Object.keys(result).reduce(function(first, second){
             return result[first] > result[second] ? first : second;
         });
-        console.log(inspect)
-        let div = document.createElement("div");
-        div.classList.add("result");
-        div.innerHTML = answers[inspect]["description"];
-        document.querySelector(".test").appendChild(div)
+
+        let paragraph = document.createElement("div");
+        paragraph.classList.add("results");
+        paragraph.innerHTML = "Your result";
+        document.querySelector(".test").appendChild(paragraph)
+
+        let letete = document.createElement("div");
+        letete.classList.add("tetsdf");
+        letete.innerHTML = "According to the test results, the film suits you:";
+        document.querySelector(".test").appendChild(letete)
 
         let img = document.createElement("img");
         img.classList.add("resultImg");
         img.src = answers[inspect]["img"];
         document.querySelector(".test").appendChild(img)
+
+        let div = document.createElement("div");
+        div.classList.add("resultDiv");
+        div.innerHTML = answers[inspect]["description"];
+        document.querySelector(".test").appendChild(div)
     }
        showQuestion(step)
     
