@@ -12,7 +12,7 @@ let quiz = [
     "answer" : {
         "homeAlone": "Himself with tasty treats",
         "harryPotter": "Having fun with friends",
-        "lastChristmas": "In the family",
+        "lastChristmas": "With family",
         "Grinch": "Eat and go to bed"
     }
 },
@@ -41,7 +41,7 @@ let quiz = [
     "question" : "What's your favorite NY dish?",
     "answer" : {
         "homeAlone": "Pizza, sushi",
-        "harryPotter": "Конфеты",
+        "harryPotter": "Caviar",
         "lastChristmas":"Candy",
         "Grinch": "Salads"
 
