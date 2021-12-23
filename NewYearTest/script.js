@@ -109,7 +109,7 @@ let answers = {
         "img" : "./img/harryPotter.jpeg"
     },
     "lastChristmas" : {
-        "description" : "If you got the movie 'Christmas for Two', then you prefer to spend the New Year in a romantic setting or with those closest to you. You adore giving gifts, and the best gratitude for you is the happy faces of those who receive them. If all the salads are not on the table, then the New Year will not be the New Year for you.",
+        "description" : "If you got the movie 'Last Christmas', then you prefer to spend the New Year in a romantic setting or with those closest to you. You adore giving gifts, and the best gratitude for you is the happy faces of those who receive them. If all the salads are not on the table, then the New Year will not be the New Year for you.",
         "img" : "./img/lastChristmas.jpeg"
     },
     "Grinch" : {
