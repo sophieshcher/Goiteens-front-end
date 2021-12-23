@@ -129,8 +129,11 @@ li {
   }
 
   #h1 {
-      font-size: 55px;
+      font-size: 50px;
+<<<<<<< HEAD
       
+=======
+>>>>>>> 0bfc1388c05ef390e55226e6664f1fab12cd4cae
   }
   
   .header-text {
@@ -406,7 +409,11 @@ li {
 
   @media (max-width: 425px) {
     #h1 {
+<<<<<<< HEAD
         font-size: 35px;
+=======
+        font-size: 27px;
+>>>>>>> 0bfc1388c05ef390e55226e6664f1fab12cd4cae
         margin: 11px auto 12px auto;
       }
   }

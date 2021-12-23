@@ -41,7 +41,12 @@ let quiz = [
     "question" : "What's your favorite NY dish?",
     "answer" : {
         "homeAlone": "Pizza, sushi",
+<<<<<<< HEAD
         "harryPotter": "Caviar",
+=======
+        "harryPotter": "Caviar
+",
+>>>>>>> 0bfc1388c05ef390e55226e6664f1fab12cd4cae
         "lastChristmas":"Candy",
         "Grinch": "Salads"
 
