@@ -404,7 +404,7 @@ li {
     }
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 525px) {
     #h1 {
         font-size: 35px;
         margin: 11px auto 12px auto;
