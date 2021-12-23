@@ -242,9 +242,7 @@ li {
     background-color: white;
     /* border: 1px solid #000000; */
     z-index: 9999;
-    box-shadow: 100px 100px 600px rgba(59, 59, 59, 0.849),
-    100px 100px 600px rgba(97, 97, 97, 0.788),
-    100px 100px 600px rgba(114, 114, 114, 0.315);
+    box-shadow: 100px 100px 600px rgba(0, 0, 0, 0.486);
   }
   
   .x {
@@ -408,5 +406,8 @@ li {
     #h1 {
         font-size: 35px;
         margin: 11px auto 12px auto;
+      }
+      .suggest-btn {
+          font-size: 15px;
       }
   }

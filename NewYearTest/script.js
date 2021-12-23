@@ -12,7 +12,7 @@ let quiz = [
     "answer" : {
         "homeAlone": "Himself with tasty treats",
         "harryPotter": "Having fun with friends",
-        "lastChristmas": "With family",
+        "lastChristmas": "In the family",
         "Grinch": "Eat and go to bed"
     }
 },
@@ -50,8 +50,8 @@ let quiz = [
 {    
     "question" : "Have you put a Christmas tree in your house?",
     "answer" : {
-        "homeAlone":"Yes very",
-        "harryPotter": "Yes! And decorated",
+        "homeAlone":"Yes, it's amazing",
+        "harryPotter": "Yes! And  decorated",
         "lastChristmas": "No, it's still early.",
         "Grinch": "No, it will crumble, I do not like to clean up"
 
@@ -186,6 +186,8 @@ window.onload = function() {
         div.classList.add("resultDiv");
         div.innerHTML = answers[inspect]["description"];
         document.querySelector(".test").appendChild(div)
+
+        document.getElementById("wrapper").style.display = "block"
     }
        showQuestion(step)
     

@@ -36,9 +36,9 @@
   }
   
   .P p {
-    width: 600px;
+    width: 70%;
     text-align: center;
-    margin: 0 auto 40px auto;
+
     font-size: 20px;
   }
   
@@ -67,7 +67,8 @@
     }
   
     .P p {
-      width: 550px;
+     width: 80%;
+     margin: 0 auto;
       font-size: 18px;
     }
   

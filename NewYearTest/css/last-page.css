@@ -196,6 +196,7 @@ li {
   .wrapper {
     background-color: #ffd600;
     padding: 33px 12px 50px 12px;
+    display: none;
   }
   
   @media screen and (max-width: 768px) {
