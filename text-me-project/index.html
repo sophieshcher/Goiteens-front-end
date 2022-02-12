@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat-me</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <p>Chat me</p>
+    <div class="proj">
+        <input placeholder="Your login" class="input" type="text" id="userName">
+        <input placeholder="Your password" class="input" type="password" id="userPassword">
+
+        <button class="btn" id="btn">go</button>
+        <div id="textAreaWrapper">
+            <button class="btn" id="findBtn">find</button>
+            <button class="btn" id="btnSend">send</button>
+        </div>
+
+    </div>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js";
+        import { getDatabase, set, ref, push, child, onValue } from
+            "https://www.gstatic.com/firebasejs/9.6.2/firebase-database.js";
+
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+
+
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyCO58F_Pyof_aFK0UG9srzTqk_EElkhAMo",
+            authDomain: "text-me-69b2a.firebaseapp.com",
+            projectId: "text-me-69b2a",
+            storageBucket: "text-me-69b2a.appspot.com",
+            messagingSenderId: "340631824288",
+            appId: "1:340631824288:web:9095ed16895d39ee6fe6c5",
+            measurementId: "G-PN3J6Q1R92",
+            databaseURL: "https://text-me-69b2a-default-rtdb.europe-west1.firebasedatabase.app",
+        };
+        const app = initializeApp(firebaseConfig);
+
+        const database = getDatabase(app);
+
+        let flowUser;
+        let userName = $("#userName")
+        let btn = $("#btn")
+        let userPassword = $("#userPassword")
+        let sendBtn = $("#btnSend")
+        let findBtn = $("#writeUserName")
+        let userNotExists = true;
+        let usersArray = {
+            user: [],
+            pass: [],
+        };
+        let passArray = [];
+        const starCountRef = ref(database, 'users/');
+        let messNick = []
+        let d = 0 
+        btn.click(function () {
+           
+            
+                const starCountRef = ref(database, 'users/');
+            onValue(starCountRef, (snapshot) => {
+                snapshot.forEach(childSnapshot => {
+                    const data = childSnapshot.val();
+                    const key = childSnapshot.key;
+                    console.log("Name:  " + data.name)
+                    console.log("Password:  " + data.password)
+                    usersArray.user.push(data.name)
+                    usersArray.pass.push(data.password)//rewrite this!!!!!!!!!!
+                });
+
+            });
+            
+                setTimeout(() => {
+                if (!usersArray.user.includes(userName.val()) && d == 1) {
+                    flowUser = userName.val()
+                    alert("Registered!");
+                    set(ref(database, 'users/' + userName.val()), {
+                        name: userName.val(),
+                        password: userPassword.val(),
+                    })
+                } else {
+                    if(d == 2 || d == 1) {
+                        if (usersArray.pass.includes(userPassword.val())) {
+                        alert("You are in!")
+                        $("#textAreaWrapper").append('<input class="input" id="writeUserName" type="text" placeholder="User login">');
+
+                        $("#textAreaWrapper").append('<textarea name="" id="textArea" cols="" rows=""></textarea>');
+                        $("#textAreaWrapper").append('<div id="divWithText"></div>');
+                        $("#btnSend").css({
+                            'display': 'block',
+
+                        })
+                        $("#findBtn").css({
+                            'display': 'block',
+
+                        })
+                        flowUser = userName.val()
+                    } else {
+                        alert("This name exist.")
+                    }
+                    }
+
+
+                }
+            }, 500);
+
+            ++d
+            console.log(d)
+            
+        });
+
+
+
+
+        let UserMessObj = []
+
+        let userWhoText
+
+        $('#findBtn').click(function () {
+            let i = 0
+            if (usersArray.user.includes($("#writeUserName").val())) {
+                // console.log("KEP ging")
+                for (let i = 0; i < usersArray.user.length; i++) {
+                    if (usersArray.user[i] == $("#writeUserName").val()) {
+                        console.log("KEP ging")
+                        userWhoText = $("#writeUserName").val()
+                        const starCountRef = ref(database, 'users/');
+                        onValue(starCountRef, (snapshot) => {
+                            if (i >= 1) {
+                                $("#divWithText").empty()
+
+                            }
+                            snapshot.forEach(childSnapshot => {
+
+
+                                const data = childSnapshot.val();
+                                const key = childSnapshot.key;
+                                UserMessObj = data.mess
+                                console.log(key)
+                                if (key == flowUser) {
+                                    console.log(UserMessObj)
+                                    console.log(Object.keys(UserMessObj))
+                                    for (let f = 0; f < Object.keys(UserMessObj).length; f++) {
+                                        // console.log(Object.keys(UserMessObj)[f])
+                                        let RRRRRRRRR = Object.keys(UserMessObj)[f]
+                                        let OOOOOO = UserMessObj[RRRRRRRRR];
+                                        console.log(Object.values(OOOOOO))
+
+                                        $("#divWithText").prepend('<p class ="textinWrapper">' + Object.keys(OOOOOO) + ":  " + Object.values(OOOOOO) + '</p>');
+
+                                    }
+
+                                }
+                            });
+                        })
+                        i++
+                    }
+                }
+            }
+        })
+
+        $('#btnSend').click(function () {
+            const userMessId = push(child(ref(database), "users")).key;
+            $("#divWithText").prepend('<p class ="textinWrapper"> ' + flowUser + ": " + $('#textArea').val() + '</p>');
+
+            let userMessegesMy = 'users/' + flowUser + "/" + "mess/" + userMessId + '/'
+
+            set(ref(database, userMessegesMy), {
+                [flowUser]: $('#textArea').val(),
+            })
+            let userMessegesToWho = 'users/' + userWhoText + "/" + "mess/" + userMessId + '/'
+            set(ref(database, userMessegesToWho), {
+                [flowUser]: $('#textArea').val(),
+            })
+
+
+
+
+            const starCountRef = ref(database, userMessegesMy);
+            onValue(starCountRef, (snapshot) => {
+                snapshot.forEach(childSnapshot => {
+                    const data = childSnapshot.val();
+                    const key = childSnapshot.key;
+                    console.log(data.mess)
+                });
+                $('#textArea').val("")
+            })
+        })
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+p {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.proj {
+    width: 60%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.input {
+    width: 300px;
+    height: 26px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    padding:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.11);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn {
+    margin-bottom: 40px;
+}
+
+#divWithText{
+    border: forestgreen 2px solid;
+    width: 300px;
+    height: 200px;
+}
+
+.btn {
+    margin: 30px;
+    background-color: indigo;
+    color: ivory;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-right: 3px solid rgb(55, 0, 95);
+    border-bottom: 3px solid rgb(55, 0, 95);
+    border-left: 2px solid rgb(55, 0, 95);
+    border-top: 2px solid rgb(55, 0, 95);
+    box-shadow: 1px 1px 4px rgba(51, 51, 51, 0.685);
+    width: 100px;
+    height: 30px;
+    transition: 200ms;
+    display: inline-block;
+}
+
+#btnSend {
+    display: none;
+}
+.btn:hover {
+    background-color: rgb(87, 0, 150);
+    border: 3px solid rgb(71, 0, 122);
+    box-shadow: 1px 1px 3px rgba(73, 73, 73, 0.685);
+    transform: scaleX(0.9);
+    transform: scaley(0.9);
+}
+
+#textAreaWrapper {
+    width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr ;
+    position: relative;
+
+}
+#writeUserName {
+    margin: 0;
+    width: 70%;
+    justify-self: start;
+    align-self: center;
+    position: relative;
+}
+#findBtn {
+    margin-right: 30px;
+    display: none;
+    justify-self: end;
+    align-self: center;
+}
+
+#textArea{
+    width: 60%;
+    height: 50px;
+    padding: 10px;
+    margin-right: 20px;
+    justify-self: end;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.11);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#btnSend {
+    position: absolute;
+    left: 210px;
+    top: 170px;
+}
+
+#divWithText {
+   margin: 10px;
+   margin-top: 0;
+   padding: 10px;
+    width: 98%;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(71, 0, 122, 0.11);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: auto;
+}
+
+#divWithText > p {
+    font-size: 13px;
+    text-align: left;
+}
+
