@@ -63,11 +63,11 @@
         let passArray = [];
         const starCountRef = ref(database, 'users/');
         let messNick = []
-        let d = 0 
+        let d = 0
         btn.click(function () {
-           
-            
-                const starCountRef = ref(database, 'users/');
+
+            // console.log(userName.val())
+            const starCountRef = ref(database, 'users/');
             onValue(starCountRef, (snapshot) => {
                 snapshot.forEach(childSnapshot => {
                     const data = childSnapshot.val();
@@ -79,44 +79,59 @@
                 });
 
             });
-            
-                setTimeout(() => {
-                if (!usersArray.user.includes(userName.val()) && d == 1) {
+
+            setTimeout(() => {
+                console.log(userName.val().length)
+                if(userName.val().length == 0 && userPassword.val().length == 0) {
+                    alert("Please, write your login and password")
+                    console.log("gggggggggggg")
+                }
+
+                else if (!usersArray.user.includes(userName.val())) {
                     flowUser = userName.val()
                     alert("Registered!");
                     set(ref(database, 'users/' + userName.val()), {
+                        
                         name: userName.val(),
                         password: userPassword.val(),
+                        
                     })
-                } else {
-                    if(d == 2 || d == 1) {
-                        if (usersArray.pass.includes(userPassword.val())) {
+                } 
+
+                 else {
+
+                    if (usersArray.pass.includes(userPassword.val())) {
                         alert("You are in!")
-                        $("#textAreaWrapper").append('<input class="input" id="writeUserName" type="text" placeholder="User login">');
+                        if (d == 0) {
+                            $("#textAreaWrapper").append('<input class="input" id="writeUserName" type="text" placeholder="User login">');
 
-                        $("#textAreaWrapper").append('<textarea name="" id="textArea" cols="" rows=""></textarea>');
-                        $("#textAreaWrapper").append('<div id="divWithText"></div>');
-                        $("#btnSend").css({
-                            'display': 'block',
+                            $("#textAreaWrapper").append('<textarea name="" id="textArea" cols="" rows=""></textarea>');
+                            $("#textAreaWrapper").append('<div id="divWithText"></div>');
+                            $("#btnSend").css({
+                                'display': 'block',
 
-                        })
-                        $("#findBtn").css({
-                            'display': 'block',
+                            })
+                            $("#findBtn").css({
+                                'display': 'block',
 
-                        })
+                            })
+                            ++d
+                        }
+
+                        
                         flowUser = userName.val()
                     } else {
                         alert("This name exist.")
                     }
-                    }
+
 
 
                 }
             }, 500);
 
-            ++d
+
             console.log(d)
-            
+
         });
 
 
