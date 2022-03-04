@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <p>To add a new task you need to write it in the form below, you would put tick if you done the task and then press the button "add one"</p>
+    <button class="btn" style="width: 100px; height: 30px; background-color: rgb(140, 174, 236); border: none; font-size: 15px; color: #333;">add one</button>
+    <input placeholder="Add new task" type="text" name="" id="task" />
+    <input type="checkbox" name="" id="completed" />
+    <span>Done or not?</span>
+    <p>If you want to remove one of the tasks, find it, copy id, paste it to form and press the button "remove" </p>
+    <button class="btnRemove" style="width: 100px; height: 30px; background-color: coral; border: none; font-size: 15px; color: #333; margin-bottom: 50px;">remove</button>
+    <input placeholder="Remove" type="text" name="" id="Remove" />
+    <!-- <div id = "div"></div>
+    <div id = "divtrue"></div> -->
+    <table style="width:100%">
+      <div class="spanWrap"> 
+        <p id="Number">№</p>       
+        <p id="elemId">ID</p>
+        <p id="taskText">Task</p>
+        <p id="complete">Completed</p>
+        
+      </div>
+
+      <!-- <tr> -->
+        <div class="columnWrap">
+          <div id="numberOfTheString"></div>
+        <div id="idTH"></div>
+        <div id="taskTH"></div>
+        <div id="completeTH"></div>
+      </div>
+      <!-- </tr> -->
+
+      <!-- <tr> -->
+
+
+    </table>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js";
+      import {
+        getDatabase,
+        set,
+        ref,
+        push,
+        child,
+        onValue,
+        remove
+      } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-database.js";
+
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyCi9jQfmz28kEYz58yOHGzB8vL5PQLUzrQ",
+        authDomain: "todo-list-b6667.firebaseapp.com",
+        projectId: "todo-list-b6667",
+        storageBucket: "todo-list-b6667.appspot.com",
+        messagingSenderId: "565841410079",
+        appId: "1:565841410079:web:781ce864ebf6737658fd2a",
+        measurementId: "G-QD47SCMCV8",
+        databaseURL:
+          "https://todo-list-b6667-default-rtdb.europe-west1.firebasedatabase.app",
+      };
+      const app = initializeApp(firebaseConfig);
+      const database = getDatabase(app);
+      let task = $("#task");
+      let completed = $("#completed")
+      let button = $(".btn");
+      let buttonRem = $(".btnRemove");
+      let DFGHJ = $("completeCheckbox")
+      let arrayTask = []
+      let arrayTaskReverse = []
+      $("#completed").css("background-image", "url(./check.png)")
+      button.click(function () {
+        
+        const todoId = push(child(ref(database), "users")).key;
+        if(completed.prop("checked") == true) {
+            
+            set(ref(database, "todolist/" + todoId), {
+            task: task.val(),
+            complete: completed.prop("checked", true),
+
+        });
+        // $("#completeTH").append("<p>" +'<input type="checkbox" class="completeCheckbox" checked>' + "<p>")
+          } else {
+            // console.log(true);
+            set(ref(database, "todolist/" + todoId), {
+            task: task.val(),
+            complete: completed.prop("checked", false),
+          });
+          
+          }
+          
+      });
+
+         
+      buttonRem.click(function () {
+        let removeValId = 'todolist/' + $("#Remove").val()
+        console.log(removeValId)
+        console.log($("#Remove").val())
+        remove(ref(database, removeValId ), {
+            });
+      });
+
+      
+      const starCountRef = ref(database, 'todolist/');
+      let i = 0
+      let f = 0
+        onValue(starCountRef, (snapshot) => {
+          if(i >= 1) {
+            $("#idTH").empty()
+            $("#completeTH").empty()
+            $("#taskTH").empty()
+            $("#numberOfTheString").empty()
+          }
+        snapshot.forEach(childSnapshot => {
+        const data = childSnapshot.val();
+        const key = childSnapshot.key;
+        arrayTask.push(data.task)
+        f++
+          console.log(f)
+          $("#numberOfTheString").append("<p>" + f + "</p>");
+          $("#idTH").append("<p>" + String(key) + "</p>");
+          $("#completeTH").append("<p>" +'<input type="checkbox" class="completeCheckbox">' + "<p>")
+          $("#taskTH").append("<p>" + String(data.task) + "</p>");
+        });
+        i++
+        f = 0
+        });
+    </script>
+    <script>
+
+    </script>
+  </body>
+</html>

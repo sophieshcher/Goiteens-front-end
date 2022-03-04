@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+ <button id="btn">Button</button>
+ <div id="divWeather"></div>
+ <img id ="img1" src="" alt="">
+ <img id ="img2" src="" alt="">
+ <img id ="img3" src="" alt="">
+ <img id ="img4" src="" alt="">
+ <!-- <script src="./reere.json"></script> -->
+
+    <script>
+        
+        $('#btn').click(function(){
+            $("#divWeather").append('<p>Hello</p>');
+        })
+
+
+        const requestURL = 'https://jsonplaceholder.typicode.com/users'
+        const requestURLPhotos = 'https://jsonplaceholder.typicode.com/photos'
+
+        function sendRequest(method, url, body = null) {
+            return new Promise((resolve, reject) => {
+                const xhr = new XMLHttpRequest();
+
+                xhr.open(method, url) 
+
+                xhr.responseType = 'json' // or below JSON.parse(xhr.response) - from String to JSON
+                xhr.setRequestHeader('Content-Type', 'application/json') // for POST
+
+                xhr.onload = () => {
+                if (xhr.status >= 400) { // more specific check om errors
+                reject(xhr.response)
+                } else {
+                resolve(xhr.response)
+                }
+            }
+
+            xhr.onerror = () => {
+            reject(xhr.response)
+            }
+
+            xhr.send(JSON.stringify(body)) // to String from Object
+            })
+        }
+
+        sendRequest('GET', requestURL)
+        .then(data => {
+            console.log(data);
+            for(let i = 0; i <= data.length; i++) {
+                
+                $("#divWeather").append('<p>' + data[i].id  +  "</p>");
+                $("#divWeather").append('<p>' + data[i].name  +  "</p>");
+
+                $("#divWeather").append('<p>' + data[i].address.street  +  "</p>");
+                $("#divWeather").append('<p>' + data[i].address.geo.lat + data[i].address.geo.lng  +  "</p>");
+                $("#divWeather").append('<p>' + data[i].username  +  "</p>");
+
+                $("#divWeather").append('<p>' + data[i].email  +  "</p>");
+
+            }
+            
+        } )
+        .catch(err => console.log(err))
+
+        const body = {
+        name: 'Svjat',
+        age: 39
+        }
+
+        sendRequest('POST', requestURL, body)
+        .then(data => console.log(data))
+        .catch(err => console.log(err)) 
+
+
+        sendRequest('GET', requestURLPhotos)
+        .then(data => {
+            console.log(data);
+            for(let i = 1; i <= 4; i++) {
+                console.log(data[i].url)
+                
+                $("#img"+ i ).attr("src", data[i].url)
+
+
+            }
+            
+        } )
+        .catch(err => console.log(err)) 
+
+        sendRequest('POST', requestURLPhotos, body)
+        .then(data => console.log(data))
+        
+        
+    </script>
+</body>
+</html>

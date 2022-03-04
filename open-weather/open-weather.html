@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <input id="length" type="text" placeholder="length">
+    <input type="text" name="" id="width" placeholder="width">
+    <input type="text" name="" id="city" placeholder="city">
+    <button id="btn"></button>
+    <script>
+        $("#btn").click(function() {
+            let length = $("#length").val()
+        let width = $("#width").val()
+        let city = $("#city").val()
+        console.log(length, width)
+
+//         let url = "https://api.ambeedata.com/latest/by-lat-lng?lat=" + width + "&" + "lng=" + length
+//         console.log(url)
+// const settings = {
+// 	"async": true,
+// 	"crossDomain": true,
+//     "url": url,
+// 	"method": "GET",
+// 	"headers": {
+// 		"x-api-key": "ad17fdb621d2dd4cf4ce07558f793c8e6156cc3c7cd6cedeef801d43807b5b36",
+// 		"Content-type": "application/json"
+// 	}
+// };
+
+// $.ajax(settings).done(function (response) {
+//     console.log(response);
+// 	console.log(response.stations[0].city);
+//     for(let i = 0; i<=7; i++) {
+//         console.log()
+//     }
+// });
+
+let cityUrl = "https://api.ambeedata.com/latest/by-city?city=" + city
+
+const settingsCity = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://api.ambeedata.com/latest/by-city?city=Bengaluru",
+	"method": "GET",
+	"headers": {
+		"x-api-key": "API_KEY",
+		"Content-type": "application/json"
+	}
+};
+$.ajax(settingsCity).done(function (response) {
+	console.log(response);
+});
+
+
+
+
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

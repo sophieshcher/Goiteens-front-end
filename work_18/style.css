@@ -1,18 +1,25 @@
 .card_wrapper {
-    width: 400px;
+    width: 600px;
     height: 200px;
     display: flex;
     flex-wrap: wrap;
-
+    margin: 30px auto;
     justify-content: space-between;
 }
 
 
 .card_wrapper > div {
-    background: forestgreen;
+    background: #b8ceb8;
     width: 100px;
     height: 100px;
     margin: 30px;
+    border-radius: 7px;
+
+}
+
+.card_wrapper > div:hover {
+    background: #a4b9a4;
+    
 }
 
 #card1 {

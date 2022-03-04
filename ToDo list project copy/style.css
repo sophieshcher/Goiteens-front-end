@@ -1,0 +1,103 @@
+body {
+     font-family: 'Dongle', sans-serif;
+     font-size: 30px;
+     padding: 0px 60px 60px 60px;
+}
+
+table {
+    table-layout: fixed;
+    width: 80%;
+    border-collapse: collapse;
+
+  }
+
+  .spanWrap  {
+      display: flex;
+
+      border: 3px solid #333;
+  }
+
+  #Number{
+      width: 5%;
+      padding: 10px;
+      text-align: center;
+      margin: 0;
+
+
+  }
+  #elemId{
+    width: 34%;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+
+
+  }
+  #taskText{
+    width: 46%;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+
+
+  }
+  #complete{
+    width: 15%;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+
+
+  }
+
+  /* #complete:nth-child(1n){
+    margin: 20px 60px;
+  } */
+
+
+  .columnWrap {
+      display: flex;
+      justify-content: space-around;
+  }
+
+  #numberOfTheString {
+    width: 5%;
+    padding: 10px;
+    border: 2px solid #333;
+    /* background-color: rgb(193, 255, 201); */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #idTH {
+      width: 34%;
+      padding: 10px;
+      border: 2px solid #333;
+      /* background-color: rgb(193, 255, 201); */
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+  }
+
+  #taskTH{
+    width: 46%;
+    display: flex;
+      flex-direction: column-reverse;
+      border: 2px solid #333;
+      padding: 10px;
+      align-items: center;
+      /* background-image: ; */
+
+      /* background-color: rgb(255, 251, 193); */
+  }
+
+ #completeTH {
+    width: 15%;
+    display: flex;
+      flex-direction: column-reverse;
+      border: 2px solid #333;
+      align-items: center;
+      padding: 10px;
+      /* background-color: rgb(193, 232, 255); */
+ }

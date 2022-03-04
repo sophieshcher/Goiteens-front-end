@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promisses</title>
+</head>
+<body>
+    <script>
+        
+
+
+    //     let myPromiss = new Promise(function(myResolve, myReject) {
+    //         function two() {
+    //         setTimeout(() => {
+    //             alert("This is function Two")
+    //             myResolve()
+    //         }, 2000);
+    //     }
+    // })
+
+
+    // myPromiss.then (
+    //     function one() {
+    //         setTimeout(() => {
+    //             alert("This is function one")
+    //         }, 1000);
+    //     }
+    //     // function(error) {
+
+    //     // }
+    // )
+
+
+    let myPromise = new Promise(function(myResolve, myReject) {
+        setTimeout(() => {
+            alert("this is function 2")
+            myResolve(); // when successful
+              // myReject(); // when error
+        }, 2000);
+        });
+
+        myPromise.then(
+        function(value) {
+            setTimeout(() => {
+                alert('this is function 1');
+            }, 1000);
+        },
+        // function(error) { /* code if some error */ }
+        );
+
+    
+    </script>
+</body>
+</html>

@@ -96,6 +96,21 @@
                         password: userPassword.val(),
                         
                     })
+                    if (d == 0) {
+                            $("#textAreaWrapper").append('<input class="input" id="writeUserName" type="text" placeholder="User login">');
+
+                            $("#textAreaWrapper").append('<textarea name="" id="textArea" cols="" rows=""></textarea>');
+                            $("#textAreaWrapper").append('<div id="divWithText"></div>');
+                            $("#btnSend").css({
+                                'display': 'block',
+
+                            })
+                            $("#findBtn").css({
+                                'display': 'block',
+
+                            })
+                            ++d
+                        }
                 } 
 
                  else {

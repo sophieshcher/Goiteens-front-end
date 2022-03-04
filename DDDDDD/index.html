@@ -1,36 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
+ 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <iframe src="quiz.html" width="480" height="720" class="quiz-frame"></iframe>
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>
+        Bouncing Ball!!
+    </title>
+    <style>
+        h1 {
+            color: green;
+        }
+         
+
+    </style>
+ 
 </head>
+ 
 <body>
-    <div class="wrapper">
-        <main class="main">
-            <div class="quiz__head">
-                <div class="head__content" id="head">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ducimus odit accusamus, illum quas magni provident odio praesentium commodi sint, porro harum, minus cupiditate architecto culpa aut ex dolore officia.</div>
-            </div>
-            <div class="quiz__body">
-                <div class="buttons">
-                    <div class="buttons__content" id="buttons">
-                        <button class="button">Default button</button><br>
-                        <button class="button button_wrong">Wrong answer</button><br>
-                        <button class="button button_correct">Correct answer</button><br>
-                        <button class="button button_passive">Unclicked button</button><br>
-                    </div>
-                </div>
-      
-                <div class="quiz__footer">
-                    <div class="footer__content" id="pages">0 / 0</div>
-                </div>
-            </div>
+    
+        <h1>GeeksforGeeks</h1>
+        <h3>Bouncing ball using JavaScript</h3>
+        <script>
+            let balls = 30
+            let balb = document.querySelector("#bosWrapper")
+             for( let i = 0; i < balls; i++ ) {
+   
+                let divBlue = document.createElement("div")
+                divBlue.classList.add("BlueBall")
+                balb.appendChild(divBlue)
+                divBlue.classList.add("Ballb")
+}
+
+            
+ 
            
-        </main>
-     </div>
-    <script src="./script.js"></script>
+ 
+            var l = canvas.getContext('2d');
+ 
+            // x and y are the co-ordinates of the circle
+ 
+            // vx and vy are the respective speeds
+ 
+            var x = Math.floor(Math.random() * innerWidth);
+            var y = Math.floor(Math.random() * innerHeight);
+            var vx = Math.floor(Math.random() * 2);
+            var vy = Math.floor(Math.random() * 4);
+            var radius = 20;
+ 
+            move();
+           
+            // This function will do the animation
+            function move() {
+                requestAnimationFrame(move);
+ 
+                // It clears the specified pixels within
+                // the given rectangle
+                l.clearRect(0, 0, innerWidth, innerHeight);
+ 
+                // Creating a circle
+                l.beginPath();
+                l.strokeStyle = "black";
+                l.arc(x, y, radius, 0, Math.PI * 2, false);
+                l.stroke();
+ 
+                // Conditions sso that the ball bounces
+                // from the edges
+                if (radius + x > innerWidth)
+                    vx = 0 - vx;
+ 
+                if (x - radius < 0)
+                    vx = 0 - vx;
+ 
+                if (y + radius > innerHeight)
+                    vy = 0 - vy;
+ 
+                if (y - radius < 0)
+                    vy = 0 - vy;
+ 
+                x = x + vx;
+                y = y + vy;
+ 
+            }
+        </script>
+
 </body>
+ 
 </html>
+
+<!-- function ballsPosition(Number) {
+    let Top, Right
+    // let ballElementsB = document.querySelectorAll(".GreenBall")
+    let thatMomentTop = document.querySelectorAll(".BlueBall")[Number].style.top
+    let thatMomentRight = document.querySelectorAll(".BlueBall")[Number].style.right
+    for(let i = 0; i < 30; i++) {
+       Top = Math.floor(Math.random() * 800)
+       Right = Math.floor(Math.random() * 1200)
+       let ballElementsB = document.querySelectorAll(".BlueBall")
+       
+       ballElementsB[i].style.position = "absolute"
+       ballElementsB[i].style.top =  Top + "px"
+       ballElementsB[i].style.right =  Right + "px"
+   
+      }
+ 
+       function randomInteger(min, max) {
+          let rand = min - 0.5 + Math.random() * (max - min + 1);
+          console.log(Math.round(rand)); 
+       }
+ 
+       if(randomInteger(1, 2) > thatMomentRight) {
+          document.querySelectorAll(".BlueBall")[i].style.top = thatMomentRight + randomInteger(0, 10) + "px"
+       }
+ 
+  }
+  
+  setInterval(() => {
+     for( let m = 0; m < document.querySelectorAll(".BlueBall").length; i++) {
+       ballsPosition(Number)
+     }
+  }, 500); -->
